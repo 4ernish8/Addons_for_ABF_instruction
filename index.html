@@ -5,6 +5,8 @@
 <title>Головна</title>
 <meta name="generator" content="WYSIWYG Web Builder 17 - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="1.ico" rel="shortcut icon" type="image/x-icon">
+<link href="2.png" rel="icon" sizes="32x32" type="image/png">
 <link href="font-awesome.min.css" rel="stylesheet">
 <link href="Безымянный1.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
@@ -69,6 +71,11 @@ $(document).ready(function()
    {
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark5').offset().top }, 600, 'linear');
+   });
+   $("a[href*='#Bookmark6']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark6').offset().top }, 600, 'linear');
    });
    $("a[href*='#Bookmark7']").click(function(event)
    {

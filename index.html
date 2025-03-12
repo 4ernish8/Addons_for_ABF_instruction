@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<title>Головна</title>
+<meta name="generator" content="WYSIWYG Web Builder 17 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="Безымянный1.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wb.slideshow.min.js"></script>
+<script src="wb.stickylayer.min.js"></script>
+<script src="wwb17.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#Bookmark1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark1').offset().top }, 600, 'linear');
+   });
+   $("#SlideShow1").slideshow(
+   {
+      interval: 5000,
+      type: 'sequence',
+      effect: 'fade',
+      direction: '',
+      pagination: false,
+      fullscreen: 4,
+      maxWidth: 500,
+      effectlength: 2000
+   });
+   $("#SlideShow1_back a").click(function()
+   {
+      $('#SlideShow1').slideshow('previmage');
+   });
+   $("#SlideShow1_next a").click(function()
+   {
+      $('#SlideShow1').slideshow('nextimage');
+   });
+   $("#SlideShow1").on('activate', function(event, index)
+   {
+      switch(index)
+      {
+         case 0:
+            ShowObjectWithEffect('wb_Image1', 1, 'fade', 1);
+            break;
+      }
+   });
+   $("#Layer1").stickylayer({orientation: 3, position: [200, 100], delay: 500, keepOriginalPos: true});
+   $("a[href*='#Bookmark2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark2').offset().top }, 600, 'linear');
+   });
+   $("a[href*='#Bookmark3']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark3').offset().top }, 600, 'linear');
+   });
+   $("a[href*='#Bookmark4']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark4').offset().top }, 600, 'linear');
+   });
+   $("a[href*='#Bookmark5']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark5').offset().top }, 600, 'linear');
+   });
+   $("a[href*='#Bookmark7']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark7').offset().top }, 600, 'linear');
+   });
+});
+</script>
+</head>
+<body>
+
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Breadcrumb2" style="display:inline-block;width:100%;z-index:0;vertical-align:top;">
+<ul id="Breadcrumb2">
+<li><a href="">Addons for ABF</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_LayoutGrid18">
+<div id="LayoutGrid18">
+<div class="col-1">
+<div id="wb_IconFont2" style="display:inline-block;width:52px;height:38px;text-align:center;z-index:1;">
+<a href="javascript:popupwnd('https://t.me/I4ernish','no','no','no','no','no','no','50','50','640','480')" target="_self"><div id="IconFont2"><i class="fa fa-telegram"></i></div></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text24">
+<span style="color:#FFFFFF;font-family:'Comic Sans MS';font-size:17px;">Написати автору</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="col-1">
+<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:4;">
+<img src="images/plugin_icon.jpg" id="Image1" alt="" width="190" height="190">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text2">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Актуальна версія плагіну 1.4.0. Плагін знаходиться в гілці &quot;плагін&quot; в нашій групі телеграм, внизу завжди актуальна версія яка буде самостійно оновлюватись (попередньо питая вашої згоди). Дія плагіну основана на преносі кріплень та окремих пазів ABF, яки ви зазделегіть зробили та вклали в фурнітуру (це дозволяє відмовитися від використання додаткових дошок,а відразу переносить всі креплення та пази з фурнітури на корпус). Корпус повинен бути групою.</span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text3">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:29px;">Інтерфейс плагіну</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text7" onmouseenter="AnimateCss('wb_Text7', 'animate-font-size', 500, 1000);return false;">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;"><a href="#Bookmark1">1) Перенос кріплення та пазів </a>(працює як з одією так і з декількома групами одночасно, ПОТРІБНО ВИДІЛИТИ ОДНУ АБО ДЕКІЛЬКА ГРУП ПЕРЕД ЗАПУСКОМ, а після повідомлення “Кріплення перенесено ..шт код завершив свою роботу<br></span><span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:16px;"><br></span>
+</div>
+<div id="wb_Text9">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;"><a href="#Bookmark3">2) Властивості фурнітури </a>(назначає фурнітурі та отворам атрибути, після чого вона буде попадати таблицю. Якщо обрано що це фурнітура-то заблокує групу щоб та не попадала в розкладку ABF, а якщо “отвір”-то зробить так щоб він переносився)<br><br></span>
+</div>
+<div id="wb_Text10">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;"><a href="#Bookmark4">3)Додати префікс модулю</a>,та деталям в ньому<br><br></span>
+</div>
+<div id="wb_Text11">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;"><a href="#Bookmark6">4) Зміна диаметру</a>, глибини та артикулу(ів) у вже створенних отворах<br><br></span>
+</div>
+<div id="wb_Text12">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;"><a href="#Bookmark5">5) Відкриває специфікацію </a>фурнітури<br><br></span>
+</div>
+<div id="wb_Text13">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;"><a href="#Bookmark1">6) Налаштування</a>: перелік постачальників (для випадаючого списку), імпорт та експорт постачальників та прайсу<br></span><span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:16px;"><br></span>
+</div>
+<div id="wb_Text14">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;"><a href="#Bookmark7">7) Видалити/змінити номер деталі абф</a><br><br></span>
+</div>
+<div id="wb_Text15">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;">8) Відкриває інструкцію<br><br></span>
+</div>
+<div id="wb_Text4">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;">9 ) Перевірка оновлення</span>
+</div>
+<div id="wb_Bookmark1" style="display:inline-block;width:100%;z-index:16;">
+<div id="Bookmark1" style="visibility:hidden;"></div>
+
+</div>
+</div>
+<div class="col-2">
+<ul id="SlideShow1" style="border-radius:0px;z-index:17;">
+<li><img class="image" width="554" height="380" src="images/2 copy.png" alt="" title=""></li>
+<li><img class="image" width="554" height="380" src="images/3 copy.png" style="display:none;" alt="" title=""></li>
+<div id="SlideShow1_back" style="position:absolute;left:4px;top:45%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Back" style="border-style:none" width="30" height="30" src="images/carousel_back.png"></a></div>
+<div id="SlideShow1_next" style="position:absolute;right:4px;top:45%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Next" style="border-style:none" width="30" height="30" src="images/carousel_next.png"></a></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text5">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:29px;">Перші налаштування та як працювати з плагіном</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text8">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;">Встановити плагін з гілки групи, налаштувати під себе перелік постачальників ТА ЗБЕРЕЖІТЬ РЕЗЕРВНУ КОПІЮ ФАЙЛА!!!&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:20;">
+<img src="images/settings.png" id="Image2" alt="" width="70" height="70">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
+<div class="row">
+<div class="col-1">
+<div id="wb_YouTube1" style="display:inline-block;width:100%;z-index:21;">
+<iframe id="YouTube1" src="https://www.youtube.com/embed/4aaXbb2JPm4?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text1">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;"><strong>Вимоги:<br></strong>Перед використанням плагіну потрібно проставити мітки за допомогою ABF. Інакше плагін не знайде деталі на які переносити кріплення.<br><br></span>
+</div>
+<div id="wb_Image3" style="display:inline-block;width:100%;height:auto;z-index:23;">
+<img src="images/5.png" id="Image3" alt="" width="1170" height="94">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Layer1" style="position:absolute;text-align:left;left:40px;top:1360px;width:5.8333%;height:71px;z-index:69;">
+<div id="wb_IconFont1" style="position:absolute;left:15px;top:13px;width:40px;height:45px;text-align:center;z-index:24;">
+<a href="#Bookmark2"><div id="IconFont1"><i class="fa fa-arrow-up"></i></div></a></div>
+</div>
+<div id="wb_LayoutGrid9">
+<div id="LayoutGrid9">
+<div class="col-1">
+<div id="wb_Image4" style="display:inline-block;width:100%;height:auto;z-index:25;">
+<img src="images/6.png" id="Image4" alt="" width="370" height="265">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text6">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;">Перед простановкою міток, ABF покаже вікно і треба прибрати нижню галку<br></span>
+</div>
+<div id="wb_Text16">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Щоб отвори перенеслись вони повинні мати і`мя ABF_Hole (будь який плагін Кості) або тег (слой) - якщо назва групи не така. Фурнітура повинна мати тег (слой) в якому міститься слово&nbsp; &quot;фурнітура&quot; в будь якому місці та регістрі. Фурнітура може бути составна, але тоді обов`язково щоб на кожну її складову був прописаний тег в якому міститься слово &quot;фурнітура&quot;, а також на саму групу комплекту. Отвори можемо вставляти всередину груп фурнітури. Див анімацію нижче<br></span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Bookmark2" style="position:absolute;left:1190px;top:0px;width:36px;height:29px;z-index:71;">
+<div id="Bookmark2" style="visibility:hidden;"></div>
+</div>
+<div id="wb_LayoutGrid10">
+<div id="LayoutGrid10">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image5" style="display:inline-block;width:100%;height:auto;z-index:28;">
+<img src="images/outliner.gif" id="Image5" alt="" width="370" height="828">
+</div>
+<div id="wb_Bookmark3" style="display:inline-block;width:100%;z-index:29;">
+<div id="Bookmark3" style="visibility:hidden;"></div>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text17">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Модулі повинні бути групами - спочатку треба обрати модулі на яких будемо переносити кріплення (один, або декілька, або всі) і натиснути кнопку</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid11">
+<div id="LayoutGrid11">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text18">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:29px;">Властивості фурнітури</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid12">
+<div id="LayoutGrid12">
+<div class="col-1">
+<div id="wb_Image6" style="display:inline-block;width:100%;height:auto;z-index:32;">
+<img src="images/назначити властивості.png" id="Image6" alt="" width="370" height="276">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text19">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Щоб фурнітура потрапляла в таблицю, треба спочатку надати їй властивості кнопкою. Відкриється вікно назначення властивостей, і якщо група 3D -її заблокує щоб вона не потрапила в деталі. Якщо це плоска група-то їй назначить ім`я для переносу отвора &quot;ABF_Hole&quot;.Поле &quot;Дозамовити вручну&quot; стосується виключно Віяр, якщо стоїть &quot;Так&quot; - то ця фурнітура потрапляє до вкладки віяр в таблиці (специфікації) звідки її можна зберегти в CSV і додати до проекту віяр.</span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid13">
+<div id="LayoutGrid13">
+<div class="row">
+<div class="col-1">
+<div id="wb_YouTube2" style="display:inline-block;width:100%;z-index:34;">
+<iframe id="YouTube2" src="https://www.youtube.com/embed/XoFlDdiW6dc?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
+
+</div>
+<div id="wb_Bookmark5" style="display:inline-block;width:100%;z-index:35;">
+<div id="Bookmark5" style="visibility:hidden;"></div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid14">
+<div id="LayoutGrid14">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text20">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:29px;">Робота з таблицею</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid15">
+<div id="LayoutGrid15">
+<div class="col-1">
+<div id="wb_Image7" style="display:inline-block;width:100%;height:auto;z-index:37;">
+<img src="images/аддфурн.png" id="Image7" alt="" width="370" height="335">
+</div>
+<div id="wb_Text22">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:16px;">Скрін з AddFurnABF</span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text21">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">В таблицю виводить усі фурнітуру для якої ми прописали властивості, а також стандартні кріплення ABF (після переносу кріплень), також отвори створені плагінами Костянтина (AddFurnABF та AddABF_Tool) у яких ви назначили назву, якщо отвір вам не треба в таблиці то не назначайте йому назву при створенні отвору!</span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid16">
+<div id="LayoutGrid16">
+<div class="row">
+<div class="col-1">
+<div id="wb_YouTube3" style="display:inline-block;width:100%;z-index:40;">
+<iframe id="YouTube3" src="https://www.youtube.com/embed/_MICmKF7mX8?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
+
+</div>
+<div id="wb_Bookmark4" style="display:inline-block;width:100%;z-index:41;">
+<div id="Bookmark4" style="visibility:hidden;"></div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid17">
+<div id="LayoutGrid17">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text23">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:29px;">Додати префікс модулю</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid19">
+<div id="LayoutGrid19">
+<div class="col-1">
+<div id="wb_Image8" style="display:inline-block;width:100%;height:auto;z-index:45;">
+<img src="images/префікс.png" id="Image8" alt="" width="370" height="228">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text25">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:16px;line-height:28px;">Додоє обраній групі і усім деталям в ній префікс він має 3 режими роботи:<br>1) додати в префікс для деталей ім`я модуля (родительскої групи) якщо залишити поле пустим, сам модуль не перейменує;<br>2) додати в префікс значення поля (додає як і деталям так і самому модулю);<br>3) видалити префікс (створенний будь яким з двох варіантів)</span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid20">
+<div id="LayoutGrid20">
+<div class="col-1">
+<div id="wb_Image9" style="display:inline-block;width:100%;height:auto;z-index:47;">
+<img src="images/1префікс.png" id="Image9" alt="" width="370" height="283">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text26">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:24px;">Перший варіант (поле залишили пустим) і він взяв префікс з імені модуля</span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid21">
+<div id="LayoutGrid21">
+<div class="col-1">
+<div id="wb_Image10" style="display:inline-block;width:100%;height:auto;z-index:49;">
+<img src="images/2префікс.png" id="Image10" alt="" width="370" height="272">
+</div>
+<div id="wb_Bookmark6" style="display:inline-block;width:100%;z-index:50;">
+<div id="Bookmark6" style="visibility:hidden;"></div>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text27">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:24px;">Другий варіант (в полі ввели &quot;№2&quot;) і він додав і до модуля і до деталей</span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid22">
+<div id="LayoutGrid22">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text28">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:29px;">Зміна диаметру у отворів, артикулів (до 2шт) та глибини</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid23">
+<div id="LayoutGrid23">
+<div class="col-1">
+<div id="wb_Image11" style="display:inline-block;width:100%;height:auto;z-index:53;">
+<img src="images/зміна отворів.png" id="Image11" alt="" width="370" height="229">
+</div>
+<div id="wb_Bookmark7" style="display:inline-block;width:100%;z-index:54;">
+<div id="Bookmark7" style="visibility:hidden;"></div>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text29">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Дозволяє змінювати диаметр, глибину та артикули у вже створених отворах, працює з отворами створенними ABF, AddFurnABF та AddABF_Tool.<br>Обираємо один або декілька однакових отворів в дереві моделі, натискаємо кнопку і вводимо данні-після плагін зміне диаметр, артикули та глибину свердління. Якщо отвори різні (різні диаметри, артикули або глибина) то вийде&nbsp; плагін попередить щоб обирали однакові отвори</span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid24">
+<div id="LayoutGrid24">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text30">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:29px;">Зміна номеру деталі абф</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid25">
+<div id="LayoutGrid25">
+<div class="col-1">
+<div id="wb_Image12" style="display:inline-block;width:100%;height:auto;z-index:57;">
+<img src="images/зміна номеру.png" id="Image12" alt="" width="370" height="291">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text31">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Дозволяє змінювати номер виділеної деталі, при сбробі змінити на номер який вже є у проєкту-видає помилку і виділяє деталі з номером який ви ввели. При успішній зміні видаляє бірку ABF та змінює ім`я деталі. Проставивши бірки наново-отримаєте у деталі позицію яку ви ввели</span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid26">
+<div id="LayoutGrid26">
+<div class="row">
+<div class="col-1">
+<div id="wb_YouTube4" style="display:inline-block;width:100%;z-index:59;">
+<iframe id="YouTube4" src="https://www.youtube.com/embed/LwCBFOXak_M?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

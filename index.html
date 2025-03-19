@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Головна</title>
-<meta name="generator" content="WYSIWYG Web Builder 17 - https://www.wysiwygwebbuilder.com">
+<meta name="generator" content="WYSIWYG Web Builder 17 Trial Version - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="1.ico" rel="shortcut icon" type="image/x-icon">
 <link href="2.png" rel="icon" sizes="32x32" type="image/png">
@@ -82,6 +82,44 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark7').offset().top }, 600, 'linear');
    });
+   $("#SlideShow2").slideshow(
+   {
+      interval: 5000,
+      type: 'sequence',
+      effect: 'fade',
+      direction: '',
+      pagination: false,
+      fullscreen: 4,
+      maxWidth: 500,
+      effectlength: 2000
+   });
+   $("#SlideShow2_back a").click(function()
+   {
+      $('#SlideShow2').slideshow('previmage');
+   });
+   $("#SlideShow2_next a").click(function()
+   {
+      $('#SlideShow2').slideshow('nextimage');
+   });
+   $("#SlideShow3").slideshow(
+   {
+      interval: 5000,
+      type: 'sequence',
+      effect: 'fade',
+      direction: '',
+      pagination: false,
+      fullscreen: 4,
+      maxWidth: 1000,
+      effectlength: 2000
+   });
+   $("#SlideShow3_back a").click(function()
+   {
+      $('#SlideShow3').slideshow('previmage');
+   });
+   $("#SlideShow3_next a").click(function()
+   {
+      $('#SlideShow3').slideshow('nextimage');
+   });
 });
 </script>
 </head>
@@ -128,7 +166,7 @@ $(document).ready(function()
 </div>
 <div class="col-2">
 <div id="wb_Text2">
-<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Актуальна версія плагіну 1.4.1. Плагін знаходиться в гілці &quot;плагін&quot; в нашій групі телеграм, внизу завжди актуальна версія яка буде самостійно оновлюватись (попередньо питая вашої згоди). Дія плагіну основана на преносі кріплень та окремих пазів ABF, яки ви зазделегіть зробили та вклали в фурнітуру (це дозволяє відмовитися від використання додаткових дошок,а відразу переносить всі креплення та пази з фурнітури на корпус). Корпус повинен бути групою.</span>
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Актуальна версія плагіну 1.4.2. Плагін знаходиться в гілці &quot;плагін&quot; в нашій групі телеграм, внизу завжди актуальна версія яка буде самостійно оновлюватись (попередньо питая вашої згоди). Дія плагіну основана на преносі кріплень та окремих пазів ABF, яки ви зазделегіть зробили та вклали в фурнітуру (це дозволяє відмовитися від використання додаткових дошок,а відразу переносить всі креплення та пази з фурнітури на корпус). Корпус повинен бути групою.</span>
 </div>
 </div>
 </div>
@@ -210,13 +248,16 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Text8">
-<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Встановити плагін з гілки групи, налаштувати під себе перелік постачальників ТА ЗБЕРЕЖІТЬ РЕЗЕРВНУ КОПІЮ ФАЙЛА!!! В налаштуваннях оберіть чи треба групувати фурнітуру у групу • Фурнітура (починаючі з версії 1.4.1)</span>
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Встановити плагін з гілки групи, налаштувати під себе перелік постачальників ТА ЗБЕРЕЖІТЬ РЕЗЕРВНУ КОПІЮ ФАЙЛА!!! В налаштуваннях оберіть чи треба групувати фурнітуру у групу • Фурнітура (починаючі з версії 1.4.1). <strong>Також в налаштуваннях з версії 1.4.2 доступно вибір стандартних кріплень, або отворів створених плагінами AddFurnABF та AddABF_Tool (за умови якщо їм ви назначали назву) які будуть ігноруватися в специфікації.<br>В випадаючому списку обираєте отвір і натискаєте додати-він з`явиться в списку нижче і буде ігноруватися в специфікації, зі списку його можна видалити-і він знову потрапить до таблиці. Вкладки запам`ятовують останню вкладку в сеансі і відкривають її (до перезапуску SketchUp).</strong></span>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:21;">
-<img src="images/налаштування.png" id="Image2" alt="" width="370" height="506">
-</div>
+<ul id="SlideShow2" style="border-radius:0px;z-index:21;">
+<li><img class="image" width="346" height="551" src="images/налашт1.png" alt="" title=""></li>
+<li><img class="image" width="346" height="551" src="images/налашт2.png" style="display:none;" alt="" title=""></li>
+<div id="SlideShow2_back" style="position:absolute;left:4px;top:47%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Back" style="border-style:none" width="30" height="30" src="images/carousel_back.png"></a></div>
+<div id="SlideShow2_next" style="position:absolute;right:4px;top:47%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Next" style="border-style:none" width="30" height="30" src="images/carousel_next.png"></a></div>
+</ul>
 </div>
 </div>
 </div>
@@ -355,7 +396,7 @@ $(document).ready(function()
 </div>
 <div class="col-2">
 <div id="wb_Text21">
-<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">В таблицю виводить усі фурнітуру для якої ми прописали властивості, а також стандартні кріплення ABF (після переносу кріплень), також отвори створені плагінами Костянтина (AddFurnABF та AddABF_Tool) у яких ви назначили назву, якщо отвір вам не треба в таблиці то не назначайте йому назву при створенні отвору!</span>
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">В таблицю виводить усі фурнітуру для якої ми прописали властивості, а також стандартні кріплення ABF, також отвори створені плагінами Костянтина (AddFurnABF та AddABF_Tool) у яких ви назначили назву, якщо отвір вам не треба в таблиці то не назначайте йому назву при створенні отвору, <strong>або додайте в налаштуваннях для ігнорування якщо назва є (з версії 1.4.2)</strong></span>
 </div>
 </div>
 </div>
@@ -517,13 +558,17 @@ $(document).ready(function()
 <div id="wb_LayoutGrid28">
 <div id="LayoutGrid28">
 <div class="col-1">
-<div id="wb_Image13" style="display:inline-block;width:100%;height:auto;z-index:63;">
-<img src="images/деталювання.png" id="Image13" alt="" width="770" height="347">
-</div>
+<ul id="SlideShow3" style="border-radius:0px;z-index:63;">
+<li><img class="image" width="998" height="437" src="images/деталювання.png" alt="" title=""></li>
+<li><img class="image" width="998" height="437" src="images/дет 4.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" width="998" height="437" src="images/дет 3.png" style="display:none;" alt="" title=""></li>
+<div id="SlideShow3_back" style="position:absolute;left:4px;top:45%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Back" style="border-style:none" width="30" height="30" src="images/carousel_back.png"></a></div>
+<div id="SlideShow3_next" style="position:absolute;right:4px;top:45%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Next" style="border-style:none" width="30" height="30" src="images/carousel_next.png"></a></div>
+</ul>
 </div>
 <div class="col-2">
 <div id="wb_Text34">
-<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Виводить деталювання як на обраний модуль, так і на усю модель. Дозволяє сортувати по матеріалу, вірно показує розміри деталей з рафіксами (поки невірно якщо деталь не паралельна стандартним осям). Зберігає у csv файл. Стовбці з матеріалом та пазом можна вимикати просто поставивши або знявши чекбокси (зберігає зміни в&nbsp; налаштуваннях)</span>
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Виводить деталювання як на обраний модуль, так і на усю модель. Дозволяє сортувати по матеріалу, вірно показує розміри деталей з рафіксами (</span><span style="color:#DC143C;font-family:'Comic Sans MS';font-size:17px;line-height:29px;"><strong>поки невірно якщо деталь не паралельна стандартним осям!!!</strong></span><span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">). Зберігає у csv файл. Стовбці з матеріалом та пазом можна вимикати просто поставивши або знявши чекбокси (зберігає зміни в&nbsp; налаштуваннях). <strong>В версії 1.4.2 додано чекбокси &quot;Сортувати по назві&quot; (сортує по назві деталі не враховуючі &quot;__число.&quot; на початку) та &quot;№ ABF&quot; (замість № по порядку виводить № деталі зі словника ABF, та прибирає з назви на початку &quot;__число.&quot; Сортування по матеріалу тепер працює і для одного обраного модуля, користувацьке сортування (натискаючи на заголовок потрібного стовпця) тепер коректно зберігається в CSV файл. Нумерація по порядку зараз відображається спочатку при зміні сортування за будь яким стовпцем.</strong></span>
 </div>
 </div>
 </div>

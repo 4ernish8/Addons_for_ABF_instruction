@@ -3,18 +3,17 @@
 <head>
 <meta charset="utf-8">
 <title>Головна</title>
-<meta name="generator" content="WYSIWYG Web Builder 17 Trial Version - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="1.ico" rel="shortcut icon" type="image/x-icon">
 <link href="2.png" rel="icon" sizes="32x32" type="image/png">
 <link href="font-awesome.min.css" rel="stylesheet">
 <link href="Безымянный1.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
-<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery-3.7.1.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="wb.slideshow.min.js"></script>
 <script src="wb.stickylayer.min.js"></script>
-<script src="wwb17.min.js"></script>
+<script src="wwb20.min.js"></script>
 <script>
 $(document).ready(function()
 {
@@ -101,11 +100,49 @@ $(document).ready(function()
    {
       $('#SlideShow2').slideshow('nextimage');
    });
+   $("#SlideShow5").slideshow(
+   {
+      interval: 3000,
+      type: 'sequence',
+      effect: 'none',
+      direction: '',
+      pagination: false,
+      fullscreen: 4,
+      maxWidth: 1920,
+      effectlength: 2000
+   });
+   $("#SlideShow5_back a").click(function()
+   {
+      $('#SlideShow5').slideshow('previmage');
+   });
+   $("#SlideShow5_next a").click(function()
+   {
+      $('#SlideShow5').slideshow('nextimage');
+   });
+   $("#SlideShow4").slideshow(
+   {
+      interval: 3000,
+      type: 'sequence',
+      effect: 'none',
+      direction: '',
+      pagination: false,
+      fullscreen: 4,
+      maxWidth: 1000,
+      effectlength: 2000
+   });
+   $("#SlideShow4_back a").click(function()
+   {
+      $('#SlideShow4').slideshow('previmage');
+   });
+   $("#SlideShow4_next a").click(function()
+   {
+      $('#SlideShow4').slideshow('nextimage');
+   });
    $("#SlideShow3").slideshow(
    {
-      interval: 5000,
+      interval: 3000,
       type: 'sequence',
-      effect: 'fade',
+      effect: 'none',
       direction: '',
       pagination: false,
       fullscreen: 4,
@@ -129,29 +166,13 @@ $(document).ready(function()
 <div id="LayoutGrid1">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Breadcrumb2" style="display:inline-block;width:100%;z-index:0;vertical-align:top;">
-<ul id="Breadcrumb2">
-<li><a href="">Addons for ABF</a></li>
+<div id="wb_Breadcrumb3" style="display:block;width:100%;z-index:0;vertical-align:top;">
+<ul id="Breadcrumb3">
+<li class="active" aria-current="page"><i class="fa fa-home"></i>Addons for ABF</li>
+<li><a href="javascript:popupwnd('https://t.me/I4ernish','no','no','no','no','no','no','','','640','480')" target="_self"><i class="fa fa-telegram"></i> Написати</a></li>
+<li><a href="./buy.html"><i class="fa fa-shopping-cart"></i> Придбати</a></li>
 </ul>
 
-</div>
-</div>
-</div>
-<div class="col-2">
-<div class="col-2-padding">
-<div id="wb_LayoutGrid18">
-<div id="LayoutGrid18">
-<div class="col-1">
-<div id="wb_IconFont2" style="display:inline-block;width:52px;height:38px;text-align:center;z-index:1;">
-<a href="javascript:popupwnd('https://t.me/I4ernish','no','no','no','no','no','no','50','50','640','480')" target="_self"><div id="IconFont2"><i class="fa fa-telegram"></i></div></a>
-</div>
-</div>
-<div class="col-2">
-<div id="wb_Text24">
-<span style="color:#FFFFFF;font-family:'Comic Sans MS';font-size:17px;">Написати автору</span>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -160,13 +181,13 @@ $(document).ready(function()
 <div id="wb_LayoutGrid2">
 <div id="LayoutGrid2">
 <div class="col-1">
-<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:4;">
+<div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:1;">
 <img src="images/plugin_icon.jpg" id="Image1" alt="" width="190" height="190">
 </div>
 </div>
 <div class="col-2">
 <div id="wb_Text2">
-<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Актуальна версія плагіну 1.4.2. Плагін знаходиться в гілці &quot;плагін&quot; в нашій групі телеграм, внизу завжди актуальна версія яка буде самостійно оновлюватись (попередньо питая вашої згоди). Дія плагіну основана на преносі кріплень та окремих пазів ABF, яки ви зазделегіть зробили та вклали в фурнітуру (це дозволяє відмовитися від використання додаткових дошок,а відразу переносить всі креплення та пази з фурнітури на корпус). Корпус повинен бути групою.</span>
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Актуальна версія плагіну 1.4.4. Плагін знаходиться в гілці &quot;плагін&quot; в нашій групі телеграм, внизу завжди актуальна версія яка буде самостійно оновлюватись (попередньо питая вашої згоди). Дія плагіну основана на преносі кріплень та окремих пазів ABF, яки ви зазделегіть зробили та вклали в фурнітуру (це дозволяє відмовитися від використання додаткових дошок,а відразу переносить всі креплення та пази з фурнітури на корпус). Корпус повинен бути групою.<br>Плагін працює з версіями 2025,2024,2023 (в 2022 останні оновлення не перевіряв). Плагін оновлюється через інтернет без необхідності видаляти та встановлювати нову версію і при оновленні не чіпає ваши налаштування</span>
 </div>
 </div>
 </div>
@@ -216,17 +237,17 @@ $(document).ready(function()
 <div id="wb_Text32">
 <span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;"><a href="#Bookmark8">10 ) Деталювання</a></span>
 </div>
-<div id="wb_Bookmark1" style="display:inline-block;width:100%;z-index:17;">
+<div id="wb_Bookmark1" style="display:block;width:100%;z-index:14;">
 <div id="Bookmark1" style="visibility:hidden;"></div>
 
 </div>
 </div>
 <div class="col-2">
-<ul id="SlideShow1" style="border-radius:0px;z-index:18;">
+<ul id="SlideShow1" style="z-index:15;">
 <li><img class="image" width="582" height="406" src="images/2 copy.png" alt="" title=""></li>
-<li><img class="image" width="582" height="406" src="images/3 copy.png" style="display:none;" alt="" title=""></li>
-<div id="SlideShow1_back" style="position:absolute;left:4px;top:45%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Back" style="border-style:none" width="30" height="30" src="images/carousel_back.png"></a></div>
-<div id="SlideShow1_next" style="position:absolute;right:4px;top:45%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Next" style="border-style:none" width="30" height="30" src="images/carousel_next.png"></a></div>
+<li><img class="image" width="582" height="406" src="images/4.png" style="display:none;" alt="" title=""></li>
+<div id="SlideShow1_back" style="position:absolute;left:4px;top:44%;width:32px;height:32px;z-index:999"><a class="carousel-control-prev" role="button"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a></div>
+<div id="SlideShow1_next" style="position:absolute;right:4px;top:44%;width:32px;height:32px;z-index:999"><a class="carousel-control-next" role="button"><span class="carousel-control-next-icon" aria-hidden="true"></span></a></div>
 </ul>
 </div>
 </div>
@@ -248,15 +269,18 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Text8">
-<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Встановити плагін з гілки групи, налаштувати під себе перелік постачальників ТА ЗБЕРЕЖІТЬ РЕЗЕРВНУ КОПІЮ ФАЙЛА!!! В налаштуваннях оберіть чи треба групувати фурнітуру у групу • Фурнітура (починаючі з версії 1.4.1). <strong>Також в налаштуваннях з версії 1.4.2 доступно вибір стандартних кріплень, або отворів створених плагінами AddFurnABF та AddABF_Tool (за умови якщо їм ви назначали назву) які будуть ігноруватися в специфікації.<br>В випадаючому списку обираєте отвір і натискаєте додати-він з`явиться в списку нижче і буде ігноруватися в специфікації, зі списку його можна видалити-і він знову потрапить до таблиці. Вкладки запам`ятовують останню вкладку в сеансі і відкривають її (до перезапуску SketchUp).</strong></span>
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Встановити плагін з гілки групи, налаштувати під себе перелік постачальників ТА ЗБЕРЕЖІТЬ РЕЗЕРВНУ КОПІЮ ФАЙЛА!!! В налаштуваннях оберіть чи треба групувати фурнітуру у групу • Фурнітура (починаючі з версії 1.4.1). Також в налаштуваннях з версії 1.4.2 доступно вибір стандартних кріплень, або отворів створених плагінами AddFurnABF та AddABF_Tool (за умови якщо їм ви назначали назву) які будуть ігноруватися в специфікації.<br>В випадаючому списку обираєте отвір і натискаєте додати-він з`явиться в списку нижче і буде ігноруватися в специфікації, зі списку його можна видалити-і він знову потрапить до таблиці. Вкладки запам`ятовують останню вкладку в сеансі і відкривають її (до перезапуску SketchUp).</span>
+</div>
+<div id="wb_Text24">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">З версії 1.4.3 доступна зміна шрифта для таблиць та диалогів плагіну (за винятком стандартних диалогів SketchUp)</span>
 </div>
 </div>
 <div class="col-2">
-<ul id="SlideShow2" style="border-radius:0px;z-index:21;">
-<li><img class="image" width="346" height="551" src="images/налашт1.png" alt="" title=""></li>
-<li><img class="image" width="346" height="551" src="images/налашт2.png" style="display:none;" alt="" title=""></li>
-<div id="SlideShow2_back" style="position:absolute;left:4px;top:47%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Back" style="border-style:none" width="30" height="30" src="images/carousel_back.png"></a></div>
-<div id="SlideShow2_next" style="position:absolute;right:4px;top:47%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Next" style="border-style:none" width="30" height="30" src="images/carousel_next.png"></a></div>
+<ul id="SlideShow2" style="z-index:19;">
+<li><img class="image" width="309" height="559" src="images/налашт3.png" alt="" title=""></li>
+<li><img class="image" width="309" height="559" src="images/налашт4.png" style="display:none;" alt="" title=""></li>
+<div id="SlideShow2_back" style="position:absolute;left:4px;top:47%;width:32px;height:32px;z-index:999"><a class="carousel-control-prev" role="button"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a></div>
+<div id="SlideShow2_next" style="position:absolute;right:4px;top:47%;width:32px;height:32px;z-index:999"><a class="carousel-control-next" role="button"><span class="carousel-control-next-icon" aria-hidden="true"></span></a></div>
 </ul>
 </div>
 </div>
@@ -266,7 +290,7 @@ $(document).ready(function()
 <div id="LayoutGrid7">
 <div class="row">
 <div class="col-1">
-<div id="wb_YouTube1" style="display:inline-block;width:100%;z-index:22;">
+<div id="wb_YouTube1" style="display:block;width:100%;z-index:20;">
 <iframe id="YouTube1" src="https://www.youtube.com/embed/4aaXbb2JPm4?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
 
 </div>
@@ -279,23 +303,23 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Text1">
-<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;"><strong>Вимоги:<br></strong>Перед використанням плагіну потрібно проставити мітки за допомогою ABF. Інакше плагін не знайде деталі на які переносити кріплення.<br><br></span>
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;"><strong>Вимоги:<br></strong>Перед використанням плагіну потрібно проставити мітки за допомогою ABF! Інакше плагін не знайде деталі на які переносити кріплення або які виводити в деталювання.<br><br></span>
 </div>
-<div id="wb_Image3" style="display:inline-block;width:100%;height:auto;z-index:24;">
+<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:22;">
 <img src="images/5.png" id="Image3" alt="" width="1170" height="94">
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="Layer1" style="position:absolute;text-align:left;left:40px;top:1360px;width:5.8333%;height:71px;z-index:75;">
-<div id="wb_IconFont1" style="position:absolute;left:15px;top:13px;width:40px;height:45px;text-align:center;z-index:25;">
+<div id="Layer1" style="position:absolute;text-align:left;left:40px;top:1360px;width:5.8333%;height:71px;z-index:74;">
+<div id="wb_IconFont1" style="position:absolute;left:15px;top:13px;width:40px;height:45px;text-align:center;z-index:23;">
 <a href="#Bookmark2"><div id="IconFont1"><i class="fa fa-arrow-up"></i></div></a></div>
 </div>
 <div id="wb_LayoutGrid9">
 <div id="LayoutGrid9">
 <div class="col-1">
-<div id="wb_Image4" style="display:inline-block;width:100%;height:auto;z-index:26;">
+<div id="wb_Image4" style="display:block;width:100%;height:auto;z-index:24;">
 <img src="images/6.png" id="Image4" alt="" width="370" height="265">
 </div>
 </div>
@@ -304,22 +328,22 @@ $(document).ready(function()
 <span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;">Перед простановкою міток, ABF покаже вікно і треба прибрати нижню галку<br></span>
 </div>
 <div id="wb_Text16">
-<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Щоб отвори перенеслись вони повинні мати і`мя ABF_Hole (будь який плагін Кості) або тег (слой) - якщо назва групи не така. Фурнітура повинна мати тег (слой) в якому міститься слово&nbsp; &quot;фурнітура&quot; в будь якому місці та регістрі. Фурнітура може бути составна, але тоді обов`язково щоб на кожну її складову був прописаний тег в якому міститься слово &quot;фурнітура&quot;, а також на саму групу комплекту. Отвори можемо вставляти всередину груп фурнітури. Див анімацію нижче<br></span>
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Щоб отвори перенеслись вони повинні мати і`мя ABF_Hole (будь який плагін Кості AddFurnABF чи AddABF_Tool) або тег (слой) - якщо назва групи не така. Фурнітура повинна мати тег (слой) в якому міститься слово&nbsp; &quot;фурнітура&quot; в будь якому місці та регістрі. Фурнітура може бути составна, але тоді обов`язково щоб на кожну її складову був прописаний тег в якому міститься слово &quot;фурнітура&quot;, а також на саму групу комплекту. Отвори можемо вставляти всередину груп фурнітури. Див анімацію нижче<br></span>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_Bookmark2" style="position:absolute;left:1190px;top:0px;width:36px;height:29px;z-index:77;">
+<div id="wb_Bookmark2" style="position:absolute;left:1190px;top:0px;width:36px;height:29px;z-index:76;">
 <div id="Bookmark2" style="visibility:hidden;"></div>
 </div>
 <div id="wb_LayoutGrid10">
 <div id="LayoutGrid10">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image5" style="display:inline-block;width:100%;height:auto;z-index:29;">
+<div id="wb_Image5" style="display:block;width:100%;height:auto;z-index:27;">
 <img src="images/outliner.gif" id="Image5" alt="" width="370" height="828">
 </div>
-<div id="wb_Bookmark3" style="display:inline-block;width:100%;z-index:30;">
+<div id="wb_Bookmark3" style="display:block;width:100%;z-index:28;">
 <div id="Bookmark3" style="visibility:hidden;"></div>
 
 </div>
@@ -346,13 +370,13 @@ $(document).ready(function()
 <div id="wb_LayoutGrid12">
 <div id="LayoutGrid12">
 <div class="col-1">
-<div id="wb_Image6" style="display:inline-block;width:100%;height:auto;z-index:33;">
-<img src="images/назначити властивості.png" id="Image6" alt="" width="370" height="276">
+<div id="wb_Image6" style="display:block;width:100%;height:auto;z-index:31;">
+<img src="images/властивості.png" id="Image6" alt="" width="470" height="577">
 </div>
 </div>
 <div class="col-2">
 <div id="wb_Text19">
-<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Щоб фурнітура потрапляла в таблицю, треба спочатку надати їй властивості кнопкою. Відкриється вікно назначення властивостей, і якщо група 3D -її заблокує щоб вона не потрапила в деталі. Якщо це плоска група-то їй назначить ім`я для переносу отвора &quot;ABF_Hole&quot;.Поле &quot;Дозамовити вручну&quot; стосується виключно Віяр, якщо стоїть &quot;Так&quot; - то ця фурнітура потрапляє до вкладки віяр в таблиці (специфікації) звідки її можна зберегти в CSV і додати до проекту віяр.</span>
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Щоб фурнітура потрапляла в таблицю, треба спочатку надати їй властивості кнопкою. Відкриється вікно назначення властивостей, і якщо група 3D -її заблокує щоб вона не потрапила в деталі. Якщо це плоска група-то їй назначить ім`я для переносу отвора &quot;ABF_Hole&quot;.Поле &quot;Дозамовити вручну&quot; стосується виключно Віяр, якщо стоїть &quot;Так&quot; - то ця фурнітура потрапляє до вкладки віяр в таблиці (специфікації) звідки її можна зберегти в CSV і додати до проекту віяр.<br>Також тепер можливо копіявати властивасті, обираємо групу з якої треба скопіювати, викликаємо діалог &quot;Властивості фурнітури&quot; і після того як зчитало їх можемо обрати іншу групу, внести правки і натиснути кнопку додати</span>
 </div>
 </div>
 </div>
@@ -361,11 +385,11 @@ $(document).ready(function()
 <div id="LayoutGrid13">
 <div class="row">
 <div class="col-1">
-<div id="wb_YouTube2" style="display:inline-block;width:100%;z-index:35;">
+<div id="wb_YouTube2" style="display:block;width:100%;z-index:33;">
 <iframe id="YouTube2" src="https://www.youtube.com/embed/XoFlDdiW6dc?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
 
 </div>
-<div id="wb_Bookmark5" style="display:inline-block;width:100%;z-index:36;">
+<div id="wb_Bookmark5" style="display:block;width:100%;z-index:34;">
 <div id="Bookmark5" style="visibility:hidden;"></div>
 
 </div>
@@ -387,7 +411,7 @@ $(document).ready(function()
 <div id="wb_LayoutGrid15">
 <div id="LayoutGrid15">
 <div class="col-1">
-<div id="wb_Image7" style="display:inline-block;width:100%;height:auto;z-index:38;">
+<div id="wb_Image7" style="display:block;width:100%;height:auto;z-index:36;">
 <img src="images/аддфурн.png" id="Image7" alt="" width="370" height="335">
 </div>
 <div id="wb_Text22">
@@ -396,7 +420,28 @@ $(document).ready(function()
 </div>
 <div class="col-2">
 <div id="wb_Text21">
-<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">В таблицю виводить усі фурнітуру для якої ми прописали властивості, а також стандартні кріплення ABF, також отвори створені плагінами Костянтина (AddFurnABF та AddABF_Tool) у яких ви назначили назву, якщо отвір вам не треба в таблиці то не назначайте йому назву при створенні отвору, <strong>або додайте в налаштуваннях для ігнорування якщо назва є (з версії 1.4.2)</strong></span>
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">В таблицю виводить усю фурнітуру для якої ми прописали властивості, а також стандартні кріплення ABF, також отвори створені плагінами Костянтина (AddFurnABF чи AddABF_Tool) у яких ви назначили назву, якщо отвір вам не треба в таблиці то не назначайте йому назву при створенні отвору, <strong>або додайте в налаштуваннях для ігнорування якщо назва є (з версії 1.4.2)</strong></span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid18">
+<div id="LayoutGrid18">
+<div class="col-1">
+<ul id="SlideShow3" style="z-index:39;">
+<li><img class="image" width="1001" height="799" src="images/таб1.png" alt="" title=""></li>
+<li><img class="image" width="1001" height="799" src="images/таб2.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" width="1001" height="799" src="images/таб3.png" style="display:none;" alt="" title=""></li>
+<div id="SlideShow3_back" style="position:absolute;left:4px;top:47%;width:32px;height:32px;z-index:999"><a class="carousel-control-prev" role="button"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a></div>
+<div id="SlideShow3_next" style="position:absolute;right:4px;top:47%;width:32px;height:32px;z-index:999"><a class="carousel-control-next" role="button"><span class="carousel-control-next-icon" aria-hidden="true"></span></a></div>
+</ul>
+</div>
+<div class="col-2">
+<div id="wb_Text35">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:24px;">В таблиці є 3 вкладки фурнітура, віяр та погонаж</span>
+</div>
+<div id="wb_Text36">
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;"><u>Фурнітура</u>: сюди виводить повний список фурнітури, можливо вводити ціну одиниці і рахує повну вартість в моделі, або в виділеному модулі. Введену ціну запам`ятовує в прайс і при кожному виклику таблиці вона буде зчитуватися з прайсу. Після вводу ціни потрібно натиснути оновити (щоб перехувало таблицю),якщо треба прибрати ціну-ставимо 0.<br><u>Віяр</u>: сюди виводиться фурнітура у якої обрано постачальник Віяр і во властивостях фурнітури обран пункт &quot;дозамовити вручну). Можливо зберегти csv файл для імпорту в замовлення віяр. Виводить інформацію для всієї моделі не дивлячись на виділення.<br><u>Погонаж</u><strong>: </strong>тут&nbsp; виводить довжини погонних матеріалів (у яких ви встановили одиницю &quot;м&quot; або групи яким плагіном AddABF_Tool ви додаєте до звіту і обрали опцію 3DFurn Погонаж). Дозволяє зберегти список в CSV файл</span>
 </div>
 </div>
 </div>
@@ -405,11 +450,11 @@ $(document).ready(function()
 <div id="LayoutGrid16">
 <div class="row">
 <div class="col-1">
-<div id="wb_YouTube3" style="display:inline-block;width:100%;z-index:41;">
+<div id="wb_YouTube3" style="display:block;width:100%;z-index:42;">
 <iframe id="YouTube3" src="https://www.youtube.com/embed/_MICmKF7mX8?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
 
 </div>
-<div id="wb_Bookmark4" style="display:inline-block;width:100%;z-index:42;">
+<div id="wb_Bookmark4" style="display:block;width:100%;z-index:43;">
 <div id="Bookmark4" style="visibility:hidden;"></div>
 
 </div>
@@ -431,13 +476,16 @@ $(document).ready(function()
 <div id="wb_LayoutGrid19">
 <div id="LayoutGrid19">
 <div class="col-1">
-<div id="wb_Image8" style="display:inline-block;width:100%;height:auto;z-index:46;">
-<img src="images/префікс.png" id="Image8" alt="" width="370" height="228">
-</div>
+<ul id="SlideShow5" style="z-index:45;">
+<li><img class="image" width="303" height="402" src="images/преф1.png" alt="" title=""></li>
+<li><img class="image" width="303" height="402" src="images/преф2.png" style="display:none;" alt="" title=""></li>
+<div id="SlideShow5_back" style="position:absolute;left:4px;top:46%;width:32px;height:32px;z-index:999"><a class="carousel-control-prev" role="button"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a></div>
+<div id="SlideShow5_next" style="position:absolute;right:4px;top:46%;width:32px;height:32px;z-index:999"><a class="carousel-control-next" role="button"><span class="carousel-control-next-icon" aria-hidden="true"></span></a></div>
+</ul>
 </div>
 <div class="col-2">
 <div id="wb_Text25">
-<span style="color:#000000;font-family:'Comic Sans MS';font-size:16px;line-height:28px;">Додоє обраній групі і усім деталям в ній префікс він має 3 режими роботи:<br>1) додати в префікс для деталей ім`я модуля (родительскої групи) якщо залишити поле пустим, сам модуль не перейменує;<br>2) додати в префікс значення поля (додає як і деталям так і самому модулю);<br>3) видалити префікс (створенний будь яким з двох варіантів)</span>
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:16px;line-height:28px;">Додоє обраній групі і усім деталям в ній префікс він має 3 режими роботи:<br>1) додати в префікс для деталей ім`я модуля (родительскої групи) якщо залишити поле пустим, сам модуль не перейменує;<br>2) додати в префікс значення поля (додає як і деталям так і самому модулю);<br>3) видалити префікс (створенний будь яким з двох варіантів)<br><strong>В оновленні 1.4.4 </strong>з`явилась можливість встановлювати власні розділювачи (раніше він був лише в квадратних дужках), створювати власний список префіксов та перемикатися зі списку на ручний ввод (кнопка біля поля для вводу, працює лише якщо в список ви ввели хочаб один запис)</span>
 </div>
 </div>
 </div>
@@ -445,7 +493,7 @@ $(document).ready(function()
 <div id="wb_LayoutGrid20">
 <div id="LayoutGrid20">
 <div class="col-1">
-<div id="wb_Image9" style="display:inline-block;width:100%;height:auto;z-index:48;">
+<div id="wb_Image9" style="display:block;width:100%;height:auto;z-index:47;">
 <img src="images/1префікс.png" id="Image9" alt="" width="370" height="283">
 </div>
 </div>
@@ -459,10 +507,10 @@ $(document).ready(function()
 <div id="wb_LayoutGrid21">
 <div id="LayoutGrid21">
 <div class="col-1">
-<div id="wb_Image10" style="display:inline-block;width:100%;height:auto;z-index:50;">
+<div id="wb_Image10" style="display:block;width:100%;height:auto;z-index:49;">
 <img src="images/2префікс.png" id="Image10" alt="" width="370" height="272">
 </div>
-<div id="wb_Bookmark6" style="display:inline-block;width:100%;z-index:51;">
+<div id="wb_Bookmark6" style="display:block;width:100%;z-index:50;">
 <div id="Bookmark6" style="visibility:hidden;"></div>
 
 </div>
@@ -488,10 +536,10 @@ $(document).ready(function()
 <div id="wb_LayoutGrid23">
 <div id="LayoutGrid23">
 <div class="col-1">
-<div id="wb_Image11" style="display:inline-block;width:100%;height:auto;z-index:54;">
+<div id="wb_Image11" style="display:block;width:100%;height:auto;z-index:53;">
 <img src="images/отвори.png" id="Image11" alt="" width="370" height="289">
 </div>
-<div id="wb_Bookmark7" style="display:inline-block;width:100%;z-index:55;">
+<div id="wb_Bookmark7" style="display:block;width:100%;z-index:54;">
 <div id="Bookmark7" style="visibility:hidden;"></div>
 
 </div>
@@ -517,7 +565,7 @@ $(document).ready(function()
 <div id="wb_LayoutGrid25">
 <div id="LayoutGrid25">
 <div class="col-1">
-<div id="wb_Image12" style="display:inline-block;width:100%;height:auto;z-index:58;">
+<div id="wb_Image12" style="display:block;width:100%;height:auto;z-index:57;">
 <img src="images/зміна номеру.png" id="Image12" alt="" width="370" height="291">
 </div>
 </div>
@@ -532,11 +580,11 @@ $(document).ready(function()
 <div id="LayoutGrid26">
 <div class="row">
 <div class="col-1">
-<div id="wb_YouTube4" style="display:inline-block;width:100%;z-index:60;">
+<div id="wb_YouTube4" style="display:block;width:100%;z-index:59;">
 <iframe id="YouTube4" src="https://www.youtube.com/embed/LwCBFOXak_M?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
 
 </div>
-<div id="wb_Bookmark8" style="display:inline-block;width:100%;z-index:61;">
+<div id="wb_Bookmark8" style="display:block;width:100%;z-index:60;">
 <div id="Bookmark8" style="visibility:hidden;"></div>
 
 </div>
@@ -558,17 +606,18 @@ $(document).ready(function()
 <div id="wb_LayoutGrid28">
 <div id="LayoutGrid28">
 <div class="col-1">
-<ul id="SlideShow3" style="border-radius:0px;z-index:63;">
-<li><img class="image" width="998" height="437" src="images/деталювання.png" alt="" title=""></li>
-<li><img class="image" width="998" height="437" src="images/дет 4.png" style="display:none;" alt="" title=""></li>
-<li><img class="image" width="998" height="437" src="images/дет 3.png" style="display:none;" alt="" title=""></li>
-<div id="SlideShow3_back" style="position:absolute;left:4px;top:45%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Back" style="border-style:none" width="30" height="30" src="images/carousel_back.png"></a></div>
-<div id="SlideShow3_next" style="position:absolute;right:4px;top:45%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Next" style="border-style:none" width="30" height="30" src="images/carousel_next.png"></a></div>
+<ul id="SlideShow4" style="z-index:62;">
+<li><img class="image" width="1182" height="703" src="images/дет1.png" alt="" title=""></li>
+<li><img class="image" width="1182" height="703" src="images/дет2.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" width="1182" height="703" src="images/дет3.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" width="1182" height="703" src="images/дет4.png" style="display:none;" alt="" title=""></li>
+<div id="SlideShow4_back" style="position:absolute;left:4px;top:46%;width:32px;height:32px;z-index:999"><a class="carousel-control-prev" role="button"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a></div>
+<div id="SlideShow4_next" style="position:absolute;right:4px;top:46%;width:32px;height:32px;z-index:999"><a class="carousel-control-next" role="button"><span class="carousel-control-next-icon" aria-hidden="true"></span></a></div>
 </ul>
 </div>
 <div class="col-2">
 <div id="wb_Text34">
-<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Виводить деталювання як на обраний модуль, так і на усю модель. Дозволяє сортувати по матеріалу, вірно показує розміри деталей з рафіксами (</span><span style="color:#DC143C;font-family:'Comic Sans MS';font-size:17px;line-height:29px;"><strong>поки невірно якщо деталь не паралельна стандартним осям!!!</strong></span><span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">). Зберігає у csv файл. Стовбці з матеріалом та пазом можна вимикати просто поставивши або знявши чекбокси (зберігає зміни в&nbsp; налаштуваннях). <strong>В версії 1.4.2 додано чекбокси &quot;Сортувати по назві&quot; (сортує по назві деталі не враховуючі &quot;__число.&quot; на початку) та &quot;№ ABF&quot; (замість № по порядку виводить № деталі зі словника ABF, та прибирає з назви на початку &quot;__число.&quot; Сортування по матеріалу тепер працює і для одного обраного модуля, користувацьке сортування (натискаючи на заголовок потрібного стовпця) тепер коректно зберігається в CSV файл. Нумерація по порядку зараз відображається спочатку при зміні сортування за будь яким стовпцем.</strong></span>
+<span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">Виводить деталювання як на обраний модуль, так і на усю модель (якщо виділена група, то виводить деталі тільки в ній і пише її ім`я в заголовок). Дозволяє сортувати по матеріалу, можна вивести конкретно обраний матеріал з випадаючого списку, вірно показує розміри деталей з рафіксами (</span><span style="color:#DC143C;font-family:'Comic Sans MS';font-size:17px;line-height:28px;"><strong>поки невірно якщо деталь не паралельна стандартним осям!!!</strong></span><span style="color:#000000;font-family:'Comic Sans MS';font-size:17px;line-height:29px;">). Зберігає у csv файл. Стовбці з матеріалом та пазом можна вимикати просто поставивши або знявши чекбокси (зберігає зміни в&nbsp; налаштуваннях). В версії 1.4.2 додано чекбокси &quot;Сортувати по назві&quot; (сортує по назві деталі не враховуючі &quot;__число.&quot; на початку) та &quot;№ ABF&quot; (замість № по порядку виводить № деталі зі словника ABF, та прибирає з назви на початку &quot;__число.&quot; Сортування по матеріалу тепер працює і для одного обраного модуля, користувацьке сортування (натискаючи на заголовок потрібного стовпця) тепер коректно зберігається в CSV файл. Нумерація по порядку зараз відображається спочатку при зміні сортування за будь яким стовпцем.<br><strong>З версії 1.4.4 </strong>додані варіанти розбивати по тегах та розбивати по матеріалах (можна обрати щось одне). При розбивці по матеріалах після назви матеріалу в підзаговці таблиці виводить в дужках його площину (для всій моделі або тільки для виділеного модуля)</span>
 </div>
 </div>
 </div>
@@ -577,7 +626,7 @@ $(document).ready(function()
 <div id="LayoutGrid29">
 <div class="row">
 <div class="col-1">
-<div id="wb_YouTube5" style="display:inline-block;width:100%;z-index:65;">
+<div id="wb_YouTube5" style="display:block;width:100%;z-index:64;">
 <iframe id="YouTube5" src="https://www.youtube.com/embed/ZtaUN-IIf-w?rel=1&amp;autoplay=1&amp;autohide=0"></iframe>
 
 </div>

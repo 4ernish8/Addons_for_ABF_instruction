@@ -9,28 +9,6 @@ body
    margin: 0;
    padding: 0;
 }
-a
-{
-   color: #0000FF;
-   text-decoration: underline;
-}
-a:visited
-{
-   color: #800080;
-}
-a:active
-{
-   color: #FF0000;
-}
-a:hover
-{
-   color: #0000FF;
-   text-decoration: underline;
-}
-input:focus, textarea:focus, select:focus
-{
-   outline: none;
-}
 #wb_LayoutGrid1
 {
    clear: both;
@@ -42,6 +20,7 @@ input:focus, textarea:focus, select:focus
    background-color: #4F4F4F;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -51,17 +30,14 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid1
 {
    box-sizing: border-box;
-   display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row;
    flex-direction: row;
-   -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
    padding: 0;
    margin-right: auto;
    margin-left: auto;
 }
-#LayoutGrid1 > .col-1, #LayoutGrid1 > .col-2
+#LayoutGrid1 > .col-1
 {
    box-sizing: border-box;
    font-size: 0;
@@ -70,9 +46,8 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#LayoutGrid1 > .col-1, #LayoutGrid1 > .col-2
+#LayoutGrid1 > .col-1
 {
-   -webkit-flex: 0 0 auto;
    flex: 0 0 auto;
 }
 #LayoutGrid1 > .col-1
@@ -81,19 +56,13 @@ input:focus, textarea:focus, select:focus
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 33.33333333%;
-   max-width: 33.33333333%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
+   flex-basis: 100%;
+   max-width: 100%;
    display: flex;
    flex-wrap: wrap;
    align-content: flex-start;
    align-self: stretch;
    align-items: flex-start;
-   -webkit-justify-content: center;
    justify-content: center;
    text-align: center;
 }
@@ -103,111 +72,13 @@ input:focus, textarea:focus, select:focus
    width: 100%;
    padding: 5px 0 5px 0;
 }
-#LayoutGrid1 > .col-2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   flex-basis: 66.66666667%;
-   max-width: 66.66666667%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: center;
-   align-self: stretch;
-   align-items: center;
-   -webkit-justify-content: flex-start;
-   justify-content: flex-start;
-   text-align: left;
-}
-#LayoutGrid1 > .col-2 > .col-2-padding
-{
-   box-sizing: border-box;
-   width: 100%;
-   padding: 5px 0 5px 0;
-}
 @media (max-width: 480px)
 {
-#LayoutGrid1 > .col-1, #LayoutGrid1 > .col-2
+#LayoutGrid1 > .col-1
 {
-   -webkit-flex-basis: 100% !important;
    flex-basis: 100% !important;
    max-width: 100% !important;
 }
-}
-#Breadcrumb2
-{
-   padding: 8px 15px 8px 15px;
-   list-style: none;
-   background-color: transparent;
-   background-image: none;
-   border: 1px solid transparent;
-   border-radius: 4px;
-   font-family: "Comic Sans MS";
-   font-weight: normal;
-   font-style: normal;
-   font-size: 0;
-   margin: 0;
-   text-align: left;
-}
-#Breadcrumb2 > li
-{
-   display: inline-block;
-   font-size: 27px;
-}
-#Breadcrumb2 a
-{
-   color: #D2691E;
-   text-decoration: none;
-}
-#Breadcrumb2 a:hover
-{
-   color: #23527C;
-   text-decoration: none;
-}
-#Breadcrumb2 > .active
-{
-   color: #777777;
-}
-#Breadcrumb2 > .active a
-{
-   color: inherit;
-   pointer-events: none;
-}
-#Breadcrumb2 > li + li:before
-{
-   content: "/";
-   padding: 0 5px;
-   color: #C0C0C0;
-}
-#Breadcrumb2 li:hover
-{
-   color: #00BFFF;
-   -webkit-transition: color 500ms linear 0ms;
-   transition: color 500ms linear 0ms;
-}
-#Breadcrumb2 li
-{
-   color: #FFFFFF;
-   -webkit-transition: color 500ms linear 0ms;
-   transition: color 500ms linear 0ms;
-}
-#Breadcrumb2 li a:hover
-{
-   color: #00BFFF;
-   -webkit-transition: color 500ms linear 0ms;
-   transition: color 500ms linear 0ms;
-}
-#Breadcrumb2 li a
-{
-   color: #FFFFFF;
-   -webkit-transition: color 500ms linear 0ms;
-   transition: color 500ms linear 0ms;
 }
 #wb_Image1
 {
@@ -230,7 +101,6 @@ input:focus, textarea:focus, select:focus
 #Image1:hover
 {
    background-image: ;
-   -webkit-transition: background-image 500ms linear 0ms;
    transition: background-image 500ms linear 0ms;
 }
 #wb_LayoutGrid2
@@ -244,6 +114,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -253,11 +124,8 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid2
 {
    box-sizing: border-box;
-   display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row;
    flex-direction: row;
-   -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
    padding: 10px 0 10px 0;
    margin-right: auto;
@@ -274,7 +142,6 @@ input:focus, textarea:focus, select:focus
 }
 #LayoutGrid2 > .col-1, #LayoutGrid2 > .col-2
 {
-   -webkit-flex: 0 0 auto;
    flex: 0 0 auto;
 }
 #LayoutGrid2 > .col-1
@@ -285,17 +152,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 16.66666667%;
    max-width: 16.66666667%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
    display: flex;
    flex-wrap: wrap;
    align-content: center;
    align-self: stretch;
    align-items: center;
-   -webkit-justify-content: flex-end;
    justify-content: flex-end;
    text-align: right;
 }
@@ -307,17 +168,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 83.33333333%;
    max-width: 83.33333333%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
    display: flex;
    flex-wrap: wrap;
    align-content: center;
    align-self: stretch;
    align-items: center;
-   -webkit-justify-content: flex-start;
    justify-content: flex-start;
    text-align: left;
 }
@@ -325,7 +180,6 @@ input:focus, textarea:focus, select:focus
 {
 #LayoutGrid2 > .col-1, #LayoutGrid2 > .col-2
 {
-   -webkit-flex-basis: 100% !important;
    flex-basis: 100% !important;
    max-width: 100% !important;
 }
@@ -362,6 +216,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 2px solid #4F4F4F;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -455,6 +310,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -496,12 +352,7 @@ input:focus, textarea:focus, select:focus
    border: 0px solid #FFFFFF;
    border-radius: 0px;
    grid-column: span 7;
-   -webkit-order: 1;
    order: 1;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
    flex-wrap: wrap;
    align-content: flex-start;
    align-self: stretch;
@@ -515,12 +366,7 @@ input:focus, textarea:focus, select:focus
    border: 0px solid #FFFFFF;
    border-radius: 0px;
    grid-column: span 5;
-   -webkit-order: 2;
    order: 2;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
    flex-wrap: wrap;
    align-content: flex-start;
    align-self: stretch;
@@ -559,7 +405,7 @@ input:focus, textarea:focus, select:focus
 #SlideShow1 .image
 {
    border-width: 0;
-   border-radius: 0px;
+   border-radius: inherit;
    display: block;
    float: left;
    height: auto;
@@ -567,6 +413,7 @@ input:focus, textarea:focus, select:focus
 }
 #SlideShow1 li
 {
+   border-radius: inherit;
    position: absolute;
    width: 100%;
    left: 0;
@@ -581,6 +428,44 @@ input:focus, textarea:focus, select:focus
    padding: 0;
    margin: 0;
 }
+#SlideShow1 .carousel-control-next, #SlideShow1 .carousel-control-prev
+{
+   cursor: pointer;
+   position: absolute;
+   text-align: center;
+   top: 0;
+   left: 0;
+   opacity: 0.5;
+   transition: opacity 0.3s ease;
+}
+#SlideShow1 .carousel-control-next-icon, #SlideShow1 .carousel-control-prev-icon
+{
+   display: inline-block;
+   width: 32px;
+   height: 32px;
+   background: transparent no-repeat center center;
+   background-size: 100% 100%;
+}
+#SlideShow1 .carousel-control-next:hover, #SlideShow1 .carousel-control-prev:hover
+{
+   text-decoration: none;
+   outline: 0;
+   opacity: 1;
+}
+#SlideShow1 .carousel-control-prev-icon
+{
+   background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23000000%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M100%2068%20L100%2059%20C100%2058%2c%2099%2057%2c%2099%2057%20C98%2056%2c%2097%2056%2c%2096%2056%20L59%2056%20L73%2040%20C74%2040%2c%2074%2039%2c%2074%2038%20C74%2037%2c%2074%2036%2c%2073%2036%20L67%2029%20C66%2028%2c%2065%2028%2c%2064%2028%20C63%2028%2c%2063%2028%2c%2062%2029%20L36%2055%20L30%2061%20C29%2062%2c%2029%2063%2c%2029%2064%20C29%2065%2c%2029%2065%2c%2030%2066%20L36%2073%20L62%2098%20C63%2099%2c%2063%2099%2c%2064%2099%20C65%2099%2c%2066%2099%2c%2067%2098%20L73%2092%20C74%2091%2c%2074%2091%2c%2074%2090%20C74%2089%2c%2074%2088%2c%2073%2087%20L59%2072%20L96%2072%20C97%2072%2c%2098%2071%2c%2099%2071%20C99%2070%2c%20100%2069%2c%20100%2068%20Z%20M113%2036%20C118%2044%2c%20121%2054%2c%20121%2064%20C121%2074%2c%20118%2083%2c%20113%2092%20C108%20100%2c%20101%20107%2c%2093%20112%20C84%20117%2c%2075%20120%2c%2064%20120%20C54%20120%2c%2045%20117%2c%2036%20112%20C28%20107%2c%2021%20100%2c%2016%2092%20C11%2083%2c%208%2074%2c%208%2064%20C8%2054%2c%2011%2044%2c%2016%2036%20C21%2027%2c%2028%2020%2c%2036%2015%20C45%2010%2c%2054%208%2c%2064%208%20C75%208%2c%2084%2010%2c%2093%2015%20C101%2020%2c%20108%2027%2c%20113%2036%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
+}
+#SlideShow1 .carousel-control-next-icon
+{
+   background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23000000%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M99%2066%20C100%2065%2c%20100%2065%2c%20100%2064%20C100%2063%2c%20100%2062%2c%2099%2061%20L93%2055%20L67%2029%20C66%2028%2c%2065%2028%2c%2065%2028%20C64%2028%2c%2063%2028%2c%2062%2029%20L56%2036%20C55%2036%2c%2055%2037%2c%2055%2038%20C55%2039%2c%2055%2040%2c%2056%2040%20L70%2056%20L32%2056%20C32%2056%2c%2031%2056%2c%2030%2057%20C29%2057%2c%2029%2058%2c%2029%2059%20L29%2068%20C29%2069%2c%2029%2070%2c%2030%2071%20C31%2071%2c%2032%2072%2c%2032%2072%20L70%2072%20L56%2087%20C55%2088%2c%2055%2089%2c%2055%2090%20C55%2090%2c%2055%2091%2c%2056%2092%20L62%2098%20C63%2099%2c%2064%2099%2c%2065%2099%20C65%2099%2c%2066%2099%2c%2067%2098%20L93%2073Z%20%20M113%2036%20C118%2044%2c%20121%2054%2c%20121%2064%20C121%2074%2c%20118%2083%2c%20113%2092%20C108%20100%2c%20101%20107%2c%2093%20112%20C84%20117%2c%2075%20120%2c%2064%20120%20C54%20120%2c%2045%20117%2c%2036%20112%20C28%20107%2c%2021%20100%2c%2016%2092%20C11%2083%2c%208%2074%2c%208%2064%20C8%2054%2c%2011%2044%2c%2016%2036%20C21%2027%2c%2028%2020%2c%2036%2015%20C45%2010%2c%2054%208%2c%2064%208%20C75%208%2c%2084%2010%2c%2093%2015%20C101%2020%2c%20108%2027%2c%20113%2036%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
+}
+#SlideShow1
+{
+   border: 0px solid #4F4F4F;
+   border-radius: 0px;
+   box-sizing: border-box;
+}
 #wb_LayoutGrid5
 {
    clear: both;
@@ -592,6 +477,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 2px solid #4F4F4F;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -685,6 +571,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -778,12 +665,14 @@ input:focus, textarea:focus, select:focus
 }
 #YouTube1
 {
+   box-sizing: border-box;
    position: absolute;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
-   border-width: 0;
+   border: 0px solid #000000;
+   border-radius: 0px;
 }
 #wb_YouTube1
 {
@@ -977,6 +866,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -1049,6 +939,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -1121,10 +1012,28 @@ input:focus, textarea:focus, select:focus
    padding: 0;
    vertical-align: top;
 }
+#wb_IconFont1 a
+{
+   text-decoration: none;
+}
+#wb_IconFont1 a::after
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   pointer-events: auto;
+   content: "";
+}
 #IconFont1
 {
    height: 45px;
    width: 40px;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
 }
 #IconFont1 i
 {
@@ -1133,9 +1042,8 @@ input:focus, textarea:focus, select:focus
    font-size: 40px;
    line-height: 45px;
    vertical-align: middle;
-   width: 39px;
 }
-#IconFont1:hover i
+#wb_IconFont1:hover #IconFont1 i
 {
    color: #00BFFF;
 }
@@ -1156,6 +1064,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -1165,11 +1074,8 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid9
 {
    box-sizing: border-box;
-   display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row;
    flex-direction: row;
-   -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
    padding: 10px 0 20px 0;
    margin-right: auto;
@@ -1186,7 +1092,6 @@ input:focus, textarea:focus, select:focus
 }
 #LayoutGrid9 > .col-1, #LayoutGrid9 > .col-2
 {
-   -webkit-flex: 0 0 auto;
    flex: 0 0 auto;
 }
 #LayoutGrid9 > .col-1
@@ -1197,17 +1102,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 33.33333333%;
    max-width: 33.33333333%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
    display: flex;
    flex-wrap: wrap;
    align-content: flex-start;
    align-self: stretch;
    align-items: flex-start;
-   -webkit-justify-content: flex-start;
    justify-content: flex-start;
    text-align: left;
 }
@@ -1219,17 +1118,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 66.66666667%;
    max-width: 66.66666667%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
    display: flex;
    flex-wrap: wrap;
    align-content: center;
    align-self: stretch;
    align-items: center;
-   -webkit-justify-content: flex-start;
    justify-content: flex-start;
    text-align: left;
 }
@@ -1237,7 +1130,6 @@ input:focus, textarea:focus, select:focus
 {
 #LayoutGrid9 > .col-1, #LayoutGrid9 > .col-2
 {
-   -webkit-flex-basis: 100% !important;
    flex-basis: 100% !important;
    max-width: 100% !important;
 }
@@ -1293,6 +1185,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -1475,6 +1368,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 2px solid #4F4F4F;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -1568,6 +1462,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -1577,11 +1472,8 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid12
 {
    box-sizing: border-box;
-   display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row;
    flex-direction: row;
-   -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
    padding: 10px 0 20px 0;
    margin-right: auto;
@@ -1598,7 +1490,6 @@ input:focus, textarea:focus, select:focus
 }
 #LayoutGrid12 > .col-1, #LayoutGrid12 > .col-2
 {
-   -webkit-flex: 0 0 auto;
    flex: 0 0 auto;
 }
 #LayoutGrid12 > .col-1
@@ -1607,19 +1498,13 @@ input:focus, textarea:focus, select:focus
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 33.33333333%;
-   max-width: 33.33333333%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
+   flex-basis: 41.66666667%;
+   max-width: 41.66666667%;
    display: flex;
    flex-wrap: wrap;
-   align-content: flex-start;
+   align-content: center;
    align-self: stretch;
-   align-items: flex-start;
-   -webkit-justify-content: flex-start;
+   align-items: center;
    justify-content: flex-start;
    text-align: left;
 }
@@ -1629,19 +1514,13 @@ input:focus, textarea:focus, select:focus
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 66.66666667%;
-   max-width: 66.66666667%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
+   flex-basis: 58.33333333%;
+   max-width: 58.33333333%;
    display: flex;
    flex-wrap: wrap;
-   align-content: flex-start;
+   align-content: center;
    align-self: stretch;
-   align-items: flex-start;
-   -webkit-justify-content: flex-start;
+   align-items: center;
    justify-content: flex-start;
    text-align: left;
 }
@@ -1649,7 +1528,6 @@ input:focus, textarea:focus, select:focus
 {
 #LayoutGrid12 > .col-1, #LayoutGrid12 > .col-2
 {
-   -webkit-flex-basis: 100% !important;
    flex-basis: 100% !important;
    max-width: 100% !important;
 }
@@ -1668,7 +1546,7 @@ input:focus, textarea:focus, select:focus
    display: block;
    width: 100%;
    height: auto;
-   max-width: 400px;
+   max-width: 420px;
    margin-left: auto;
    margin-right: auto;
    vertical-align: top;
@@ -1684,6 +1562,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -1747,12 +1626,14 @@ input:focus, textarea:focus, select:focus
 }
 #YouTube2
 {
+   box-sizing: border-box;
    position: absolute;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
-   border-width: 0;
+   border: 0px solid #000000;
+   border-radius: 0px;
 }
 #wb_YouTube2
 {
@@ -1799,6 +1680,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 2px solid #4F4F4F;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -1892,6 +1774,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -1901,11 +1784,8 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid15
 {
    box-sizing: border-box;
-   display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row;
    flex-direction: row;
-   -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
    padding: 10px 0 20px 0;
    margin-right: auto;
@@ -1922,7 +1802,6 @@ input:focus, textarea:focus, select:focus
 }
 #LayoutGrid15 > .col-1, #LayoutGrid15 > .col-2
 {
-   -webkit-flex: 0 0 auto;
    flex: 0 0 auto;
 }
 #LayoutGrid15 > .col-1
@@ -1933,17 +1812,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 33.33333333%;
    max-width: 33.33333333%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
    display: flex;
    flex-wrap: wrap;
-   align-content: flex-start;
+   align-content: center;
    align-self: stretch;
-   align-items: flex-start;
-   -webkit-justify-content: flex-start;
+   align-items: center;
    justify-content: flex-start;
    text-align: left;
 }
@@ -1955,17 +1828,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 66.66666667%;
    max-width: 66.66666667%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
    display: flex;
    flex-wrap: wrap;
-   align-content: flex-start;
+   align-content: center;
    align-self: stretch;
-   align-items: flex-start;
-   -webkit-justify-content: flex-start;
+   align-items: center;
    justify-content: flex-start;
    text-align: left;
 }
@@ -1973,7 +1840,84 @@ input:focus, textarea:focus, select:focus
 {
 #LayoutGrid15 > .col-1, #LayoutGrid15 > .col-2
 {
-   -webkit-flex-basis: 100% !important;
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+}
+}
+#wb_LayoutGrid18
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px solid #DDDDDD;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid18
+{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid18 > .col-1, #LayoutGrid18 > .col-2
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid18 > .col-1, #LayoutGrid18 > .col-2
+{
+   flex: 0 0 auto;
+}
+#LayoutGrid18 > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 58.33333333%;
+   max-width: 58.33333333%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
+   justify-content: flex-start;
+   text-align: left;
+}
+#LayoutGrid18 > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 41.66666667%;
+   max-width: 41.66666667%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
+   justify-content: flex-start;
+   text-align: left;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid18 > .col-1, #LayoutGrid18 > .col-2
+{
    flex-basis: 100% !important;
    max-width: 100% !important;
 }
@@ -2050,6 +1994,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -2113,12 +2058,14 @@ input:focus, textarea:focus, select:focus
 }
 #YouTube3
 {
+   box-sizing: border-box;
    position: absolute;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
-   border-width: 0;
+   border: 0px solid #000000;
+   border-radius: 0px;
 }
 #wb_YouTube3
 {
@@ -2144,6 +2091,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 2px solid #4F4F4F;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -2226,155 +2174,6 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    width: 100%;
 }
-#wb_IconFont2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #245580;
-   border-radius: 0px;
-   text-align: center;
-   margin: 0;
-   padding: 0;
-   vertical-align: top;
-   display:inline-block;
-   position:relative;
-}
-#IconFont2
-{
-   height: 38px;
-   width: 52px;
-}
-#IconFont2 i
-{
-   color: #FFFFFF;
-   display: inline-block;
-   font-size: 38px;
-   line-height: 38px;
-   vertical-align: middle;
-   width: 37px;
-}
-#IconFont2:hover i
-{
-   color: #00BFFF;
-}
-#wb_Text24 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: left;
-}
-#wb_Text24 div
-{
-   text-align: left;
-}
-#wb_Text24
-{
-   display: block;
-   margin: 0;
-   box-sizing: border-box;
-   width: 100%;
-}
-#wb_LayoutGrid18
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
-   margin: 0;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 500px;
-}
-#LayoutGrid18
-{
-   box-sizing: border-box;
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   padding: 0;
-   margin-right: auto;
-   margin-left: auto;
-}
-#LayoutGrid18 > .col-1, #LayoutGrid18 > .col-2
-{
-   box-sizing: border-box;
-   font-size: 0;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#LayoutGrid18 > .col-1, #LayoutGrid18 > .col-2
-{
-   -webkit-flex: 0 0 auto;
-   flex: 0 0 auto;
-}
-#LayoutGrid18 > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   flex-basis: 16.66666667%;
-   max-width: 16.66666667%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: center;
-   align-self: stretch;
-   align-items: center;
-   -webkit-justify-content: flex-end;
-   justify-content: flex-end;
-   text-align: right;
-}
-#LayoutGrid18 > .col-2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   flex-basis: 83.33333333%;
-   max-width: 83.33333333%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: center;
-   align-self: stretch;
-   align-items: center;
-   -webkit-justify-content: flex-start;
-   justify-content: flex-start;
-   text-align: left;
-}
-@media (max-width: 480px)
-{
-#LayoutGrid18 > .col-1, #LayoutGrid18 > .col-2
-{
-   -webkit-flex-basis: 100% !important;
-   flex-basis: 100% !important;
-   max-width: 100% !important;
-}
-}
 #wb_LayoutGrid19
 {
    clear: both;
@@ -2386,6 +2185,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -2395,11 +2195,8 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid19
 {
    box-sizing: border-box;
-   display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row;
    flex-direction: row;
-   -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
    padding: 10px 0 20px 0;
    margin-right: auto;
@@ -2416,7 +2213,6 @@ input:focus, textarea:focus, select:focus
 }
 #LayoutGrid19 > .col-1, #LayoutGrid19 > .col-2
 {
-   -webkit-flex: 0 0 auto;
    flex: 0 0 auto;
 }
 #LayoutGrid19 > .col-1
@@ -2427,17 +2223,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 33.33333333%;
    max-width: 33.33333333%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
    display: flex;
    flex-wrap: wrap;
-   align-content: flex-start;
+   align-content: center;
    align-self: stretch;
-   align-items: flex-start;
-   -webkit-justify-content: flex-start;
+   align-items: center;
    justify-content: flex-start;
    text-align: left;
 }
@@ -2449,17 +2239,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 66.66666667%;
    max-width: 66.66666667%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
    display: flex;
    flex-wrap: wrap;
    align-content: center;
    align-self: stretch;
    align-items: center;
-   -webkit-justify-content: flex-start;
    justify-content: flex-start;
    text-align: left;
 }
@@ -2467,7 +2251,6 @@ input:focus, textarea:focus, select:focus
 {
 #LayoutGrid19 > .col-1, #LayoutGrid19 > .col-2
 {
-   -webkit-flex-basis: 100% !important;
    flex-basis: 100% !important;
    max-width: 100% !important;
 }
@@ -2493,25 +2276,6 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    width: 100%;
 }
-#wb_Image8
-{
-   margin: 0;
-   vertical-align: top;
-}
-#Image8
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   box-sizing: border-box;
-   padding: 0;
-   display: block;
-   width: 100%;
-   height: auto;
-   max-width: 300px;
-   margin-left: auto;
-   margin-right: auto;
-   vertical-align: top;
-}
 #wb_LayoutGrid20
 {
    clear: both;
@@ -2523,6 +2287,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -2532,11 +2297,8 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid20
 {
    box-sizing: border-box;
-   display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row;
    flex-direction: row;
-   -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
    padding: 10px 0 20px 0;
    margin-right: auto;
@@ -2553,7 +2315,6 @@ input:focus, textarea:focus, select:focus
 }
 #LayoutGrid20 > .col-1, #LayoutGrid20 > .col-2
 {
-   -webkit-flex: 0 0 auto;
    flex: 0 0 auto;
 }
 #LayoutGrid20 > .col-1
@@ -2564,17 +2325,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 33.33333333%;
    max-width: 33.33333333%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
    display: flex;
    flex-wrap: wrap;
    align-content: flex-start;
    align-self: stretch;
    align-items: flex-start;
-   -webkit-justify-content: flex-start;
    justify-content: flex-start;
    text-align: left;
 }
@@ -2586,17 +2341,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 66.66666667%;
    max-width: 66.66666667%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
    display: flex;
    flex-wrap: wrap;
    align-content: center;
    align-self: stretch;
    align-items: center;
-   -webkit-justify-content: flex-start;
    justify-content: flex-start;
    text-align: left;
 }
@@ -2604,7 +2353,6 @@ input:focus, textarea:focus, select:focus
 {
 #LayoutGrid20 > .col-1, #LayoutGrid20 > .col-2
 {
-   -webkit-flex-basis: 100% !important;
    flex-basis: 100% !important;
    max-width: 100% !important;
 }
@@ -2620,6 +2368,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -2629,11 +2378,8 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid21
 {
    box-sizing: border-box;
-   display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row;
    flex-direction: row;
-   -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
    padding: 10px 0 20px 0;
    margin-right: auto;
@@ -2650,7 +2396,6 @@ input:focus, textarea:focus, select:focus
 }
 #LayoutGrid21 > .col-1, #LayoutGrid21 > .col-2
 {
-   -webkit-flex: 0 0 auto;
    flex: 0 0 auto;
 }
 #LayoutGrid21 > .col-1
@@ -2661,17 +2406,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 33.33333333%;
    max-width: 33.33333333%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
    display: flex;
    flex-wrap: wrap;
    align-content: flex-start;
    align-self: stretch;
    align-items: flex-start;
-   -webkit-justify-content: flex-start;
    justify-content: flex-start;
    text-align: left;
 }
@@ -2683,17 +2422,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 66.66666667%;
    max-width: 66.66666667%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
    display: flex;
    flex-wrap: wrap;
    align-content: center;
    align-self: stretch;
    align-items: center;
-   -webkit-justify-content: flex-start;
    justify-content: flex-start;
    text-align: left;
 }
@@ -2701,7 +2434,6 @@ input:focus, textarea:focus, select:focus
 {
 #LayoutGrid21 > .col-1, #LayoutGrid21 > .col-2
 {
-   -webkit-flex-basis: 100% !important;
    flex-basis: 100% !important;
    max-width: 100% !important;
 }
@@ -2797,6 +2529,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 2px solid #4F4F4F;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -2890,6 +2623,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -2899,11 +2633,8 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid23
 {
    box-sizing: border-box;
-   display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row;
    flex-direction: row;
-   -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
    padding: 10px 0 20px 0;
    margin-right: auto;
@@ -2920,7 +2651,6 @@ input:focus, textarea:focus, select:focus
 }
 #LayoutGrid23 > .col-1, #LayoutGrid23 > .col-2
 {
-   -webkit-flex: 0 0 auto;
    flex: 0 0 auto;
 }
 #LayoutGrid23 > .col-1
@@ -2931,17 +2661,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 33.33333333%;
    max-width: 33.33333333%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
    display: flex;
    flex-wrap: wrap;
    align-content: flex-start;
    align-self: stretch;
    align-items: flex-start;
-   -webkit-justify-content: flex-start;
    justify-content: flex-start;
    text-align: left;
 }
@@ -2953,17 +2677,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 66.66666667%;
    max-width: 66.66666667%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
    display: flex;
    flex-wrap: wrap;
    align-content: center;
    align-self: stretch;
    align-items: center;
-   -webkit-justify-content: flex-start;
    justify-content: flex-start;
    text-align: left;
 }
@@ -2971,7 +2689,6 @@ input:focus, textarea:focus, select:focus
 {
 #LayoutGrid23 > .col-1, #LayoutGrid23 > .col-2
 {
-   -webkit-flex-basis: 100% !important;
    flex-basis: 100% !important;
    max-width: 100% !important;
 }
@@ -3027,6 +2744,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 2px solid #4F4F4F;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -3120,6 +2838,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -3129,11 +2848,8 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid25
 {
    box-sizing: border-box;
-   display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row;
    flex-direction: row;
-   -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
    padding: 10px 0 20px 0;
    margin-right: auto;
@@ -3150,7 +2866,6 @@ input:focus, textarea:focus, select:focus
 }
 #LayoutGrid25 > .col-1, #LayoutGrid25 > .col-2
 {
-   -webkit-flex: 0 0 auto;
    flex: 0 0 auto;
 }
 #LayoutGrid25 > .col-1
@@ -3161,17 +2876,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 33.33333333%;
    max-width: 33.33333333%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: flex-start;
-   -webkit-align-self: stretch;
-   -webkit-align-items: flex-start;
    display: flex;
    flex-wrap: wrap;
    align-content: flex-start;
    align-self: stretch;
    align-items: flex-start;
-   -webkit-justify-content: flex-start;
    justify-content: flex-start;
    text-align: left;
 }
@@ -3183,17 +2892,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 66.66666667%;
    max-width: 66.66666667%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
    display: flex;
    flex-wrap: wrap;
    align-content: center;
    align-self: stretch;
    align-items: center;
-   -webkit-justify-content: flex-start;
    justify-content: flex-start;
    text-align: left;
 }
@@ -3201,7 +2904,6 @@ input:focus, textarea:focus, select:focus
 {
 #LayoutGrid25 > .col-1, #LayoutGrid25 > .col-2
 {
-   -webkit-flex-basis: 100% !important;
    flex-basis: 100% !important;
    max-width: 100% !important;
 }
@@ -3257,6 +2959,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -3320,12 +3023,14 @@ input:focus, textarea:focus, select:focus
 }
 #YouTube4
 {
+   box-sizing: border-box;
    position: absolute;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
-   border-width: 0;
+   border: 0px solid #000000;
+   border-radius: 0px;
 }
 #wb_YouTube4
 {
@@ -3372,6 +3077,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 2px solid #4F4F4F;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -3465,6 +3171,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -3474,11 +3181,8 @@ input:focus, textarea:focus, select:focus
 #LayoutGrid28
 {
    box-sizing: border-box;
-   display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row;
    flex-direction: row;
-   -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
    padding: 10px 0 20px 0;
    margin-right: auto;
@@ -3495,7 +3199,6 @@ input:focus, textarea:focus, select:focus
 }
 #LayoutGrid28 > .col-1, #LayoutGrid28 > .col-2
 {
-   -webkit-flex: 0 0 auto;
    flex: 0 0 auto;
 }
 #LayoutGrid28 > .col-1
@@ -3506,17 +3209,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 66.66666667%;
    max-width: 66.66666667%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
    display: flex;
    flex-wrap: wrap;
    align-content: center;
    align-self: stretch;
    align-items: center;
-   -webkit-justify-content: flex-start;
    justify-content: flex-start;
    text-align: left;
 }
@@ -3528,17 +3225,11 @@ input:focus, textarea:focus, select:focus
    border-radius: 0px;
    flex-basis: 33.33333333%;
    max-width: 33.33333333%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
    display: flex;
    flex-wrap: wrap;
    align-content: center;
    align-self: stretch;
    align-items: center;
-   -webkit-justify-content: flex-start;
    justify-content: flex-start;
    text-align: left;
 }
@@ -3546,7 +3237,6 @@ input:focus, textarea:focus, select:focus
 {
 #LayoutGrid28 > .col-1, #LayoutGrid28 > .col-2
 {
-   -webkit-flex-basis: 100% !important;
    flex-basis: 100% !important;
    max-width: 100% !important;
 }
@@ -3583,6 +3273,7 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
+   border-radius: 0px;
    box-sizing: border-box;
    margin: 0;
    margin-right: auto;
@@ -3646,12 +3337,14 @@ input:focus, textarea:focus, select:focus
 }
 #YouTube5
 {
+   box-sizing: border-box;
    position: absolute;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
-   border-width: 0;
+   border: 0px solid #000000;
+   border-radius: 0px;
 }
 #wb_YouTube5
 {
@@ -3669,7 +3362,7 @@ input:focus, textarea:focus, select:focus
 #SlideShow2 .image
 {
    border-width: 0;
-   border-radius: 0px;
+   border-radius: inherit;
    display: block;
    float: left;
    height: auto;
@@ -3677,6 +3370,7 @@ input:focus, textarea:focus, select:focus
 }
 #SlideShow2 li
 {
+   border-radius: inherit;
    position: absolute;
    width: 100%;
    left: 0;
@@ -3691,10 +3385,268 @@ input:focus, textarea:focus, select:focus
    padding: 0;
    margin: 0;
 }
+#SlideShow2 .carousel-control-next, #SlideShow2 .carousel-control-prev
+{
+   cursor: pointer;
+   position: absolute;
+   text-align: center;
+   top: 0;
+   left: 0;
+   opacity: 0.5;
+   transition: opacity 0.3s ease;
+}
+#SlideShow2 .carousel-control-next-icon, #SlideShow2 .carousel-control-prev-icon
+{
+   display: inline-block;
+   width: 32px;
+   height: 32px;
+   background: transparent no-repeat center center;
+   background-size: 100% 100%;
+}
+#SlideShow2 .carousel-control-next:hover, #SlideShow2 .carousel-control-prev:hover
+{
+   text-decoration: none;
+   outline: 0;
+   opacity: 1;
+}
+#SlideShow2 .carousel-control-prev-icon
+{
+   background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23000000%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M100%2068%20L100%2059%20C100%2058%2c%2099%2057%2c%2099%2057%20C98%2056%2c%2097%2056%2c%2096%2056%20L59%2056%20L73%2040%20C74%2040%2c%2074%2039%2c%2074%2038%20C74%2037%2c%2074%2036%2c%2073%2036%20L67%2029%20C66%2028%2c%2065%2028%2c%2064%2028%20C63%2028%2c%2063%2028%2c%2062%2029%20L36%2055%20L30%2061%20C29%2062%2c%2029%2063%2c%2029%2064%20C29%2065%2c%2029%2065%2c%2030%2066%20L36%2073%20L62%2098%20C63%2099%2c%2063%2099%2c%2064%2099%20C65%2099%2c%2066%2099%2c%2067%2098%20L73%2092%20C74%2091%2c%2074%2091%2c%2074%2090%20C74%2089%2c%2074%2088%2c%2073%2087%20L59%2072%20L96%2072%20C97%2072%2c%2098%2071%2c%2099%2071%20C99%2070%2c%20100%2069%2c%20100%2068%20Z%20M113%2036%20C118%2044%2c%20121%2054%2c%20121%2064%20C121%2074%2c%20118%2083%2c%20113%2092%20C108%20100%2c%20101%20107%2c%2093%20112%20C84%20117%2c%2075%20120%2c%2064%20120%20C54%20120%2c%2045%20117%2c%2036%20112%20C28%20107%2c%2021%20100%2c%2016%2092%20C11%2083%2c%208%2074%2c%208%2064%20C8%2054%2c%2011%2044%2c%2016%2036%20C21%2027%2c%2028%2020%2c%2036%2015%20C45%2010%2c%2054%208%2c%2064%208%20C75%208%2c%2084%2010%2c%2093%2015%20C101%2020%2c%20108%2027%2c%20113%2036%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
+}
+#SlideShow2 .carousel-control-next-icon
+{
+   background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23000000%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M99%2066%20C100%2065%2c%20100%2065%2c%20100%2064%20C100%2063%2c%20100%2062%2c%2099%2061%20L93%2055%20L67%2029%20C66%2028%2c%2065%2028%2c%2065%2028%20C64%2028%2c%2063%2028%2c%2062%2029%20L56%2036%20C55%2036%2c%2055%2037%2c%2055%2038%20C55%2039%2c%2055%2040%2c%2056%2040%20L70%2056%20L32%2056%20C32%2056%2c%2031%2056%2c%2030%2057%20C29%2057%2c%2029%2058%2c%2029%2059%20L29%2068%20C29%2069%2c%2029%2070%2c%2030%2071%20C31%2071%2c%2032%2072%2c%2032%2072%20L70%2072%20L56%2087%20C55%2088%2c%2055%2089%2c%2055%2090%20C55%2090%2c%2055%2091%2c%2056%2092%20L62%2098%20C63%2099%2c%2064%2099%2c%2065%2099%20C65%2099%2c%2066%2099%2c%2067%2098%20L93%2073Z%20%20M113%2036%20C118%2044%2c%20121%2054%2c%20121%2064%20C121%2074%2c%20118%2083%2c%20113%2092%20C108%20100%2c%20101%20107%2c%2093%20112%20C84%20117%2c%2075%20120%2c%2064%20120%20C54%20120%2c%2045%20117%2c%2036%20112%20C28%20107%2c%2021%20100%2c%2016%2092%20C11%2083%2c%208%2074%2c%208%2064%20C8%2054%2c%2011%2044%2c%2016%2036%20C21%2027%2c%2028%2020%2c%2036%2015%20C45%2010%2c%2054%208%2c%2064%208%20C75%208%2c%2084%2010%2c%2093%2015%20C101%2020%2c%20108%2027%2c%20113%2036%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
+}
+#SlideShow2
+{
+   border: 0px solid #4F4F4F;
+   border-radius: 0px;
+   box-sizing: border-box;
+}
+#Breadcrumb3
+{
+   list-style: none;
+   padding: 8px 15px 8px 15px;
+   background-color: transparent;
+   background-image: none;
+   border: 1px dotted #C0C0C0;
+   border-radius: 4px;
+   font-family: "Comic Sans MS";
+   font-weight: normal;
+   font-style: normal;
+   font-size: 0;
+   margin: 0;
+   text-align: left;
+}
+#Breadcrumb3 > li
+{
+   display: inline-block;
+   font-size: 27px;
+   text-transform: none;
+}
+#Breadcrumb3 a
+{
+   color: #D2691E;
+   text-decoration: none;
+}
+#Breadcrumb3 a:hover
+{
+   color: #23527C;
+   text-decoration: none;
+}
+#Breadcrumb3 > .active
+{
+   color: #D3D3D3;
+}
+#Breadcrumb3 > .active a
+{
+   color: inherit;
+   pointer-events: none;
+}
+#Breadcrumb3 > li + li:before
+{
+   content: "|";
+   padding: 0 8px;
+   color: #C0C0C0;
+}
+#Breadcrumb3 li i
+{
+   font-size: 27px;
+   width: 29px;
+}
+#Breadcrumb3 li:hover
+{
+   color: #00BFFF;
+   transition: color 500ms linear 0ms;
+}
+#Breadcrumb3 li
+{
+   color: #FFFFFF;
+   transition: color 500ms linear 0ms;
+}
+#Breadcrumb3 li a:hover
+{
+   color: #00BFFF;
+   transition: color 500ms linear 0ms;
+}
+#Breadcrumb3 li a
+{
+   color: #FFFFFF;
+   transition: color 500ms linear 0ms;
+}
+#wb_Text24 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text24 div
+{
+   text-align: left;
+}
+#wb_Text24
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#SlideShow5 .image
+{
+   border-width: 0;
+   border-radius: inherit;
+   display: block;
+   float: left;
+   height: auto;
+   width: 100%;
+}
+#SlideShow5 li
+{
+   border-radius: inherit;
+   position: absolute;
+   width: 100%;
+   left: 0;
+   top: 0;
+}
+#SlideShow5
+{
+   display: inline-block;
+   position: relative;
+   list-style: none;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+}
+#SlideShow5 .carousel-control-next, #SlideShow5 .carousel-control-prev
+{
+   cursor: pointer;
+   position: absolute;
+   text-align: center;
+   top: 0;
+   left: 0;
+   opacity: 0.5;
+   transition: opacity 0.3s ease;
+}
+#SlideShow5 .carousel-control-next-icon, #SlideShow5 .carousel-control-prev-icon
+{
+   display: inline-block;
+   width: 32px;
+   height: 32px;
+   background: transparent no-repeat center center;
+   background-size: 100% 100%;
+}
+#SlideShow5 .carousel-control-next:hover, #SlideShow5 .carousel-control-prev:hover
+{
+   text-decoration: none;
+   outline: 0;
+   opacity: 1;
+}
+#SlideShow5 .carousel-control-prev-icon
+{
+   background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23000000%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M100%2068%20L100%2059%20C100%2058%2c%2099%2057%2c%2099%2057%20C98%2056%2c%2097%2056%2c%2096%2056%20L59%2056%20L73%2040%20C74%2040%2c%2074%2039%2c%2074%2038%20C74%2037%2c%2074%2036%2c%2073%2036%20L67%2029%20C66%2028%2c%2065%2028%2c%2064%2028%20C63%2028%2c%2063%2028%2c%2062%2029%20L36%2055%20L30%2061%20C29%2062%2c%2029%2063%2c%2029%2064%20C29%2065%2c%2029%2065%2c%2030%2066%20L36%2073%20L62%2098%20C63%2099%2c%2063%2099%2c%2064%2099%20C65%2099%2c%2066%2099%2c%2067%2098%20L73%2092%20C74%2091%2c%2074%2091%2c%2074%2090%20C74%2089%2c%2074%2088%2c%2073%2087%20L59%2072%20L96%2072%20C97%2072%2c%2098%2071%2c%2099%2071%20C99%2070%2c%20100%2069%2c%20100%2068%20Z%20M113%2036%20C118%2044%2c%20121%2054%2c%20121%2064%20C121%2074%2c%20118%2083%2c%20113%2092%20C108%20100%2c%20101%20107%2c%2093%20112%20C84%20117%2c%2075%20120%2c%2064%20120%20C54%20120%2c%2045%20117%2c%2036%20112%20C28%20107%2c%2021%20100%2c%2016%2092%20C11%2083%2c%208%2074%2c%208%2064%20C8%2054%2c%2011%2044%2c%2016%2036%20C21%2027%2c%2028%2020%2c%2036%2015%20C45%2010%2c%2054%208%2c%2064%208%20C75%208%2c%2084%2010%2c%2093%2015%20C101%2020%2c%20108%2027%2c%20113%2036%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
+}
+#SlideShow5 .carousel-control-next-icon
+{
+   background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23000000%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M99%2066%20C100%2065%2c%20100%2065%2c%20100%2064%20C100%2063%2c%20100%2062%2c%2099%2061%20L93%2055%20L67%2029%20C66%2028%2c%2065%2028%2c%2065%2028%20C64%2028%2c%2063%2028%2c%2062%2029%20L56%2036%20C55%2036%2c%2055%2037%2c%2055%2038%20C55%2039%2c%2055%2040%2c%2056%2040%20L70%2056%20L32%2056%20C32%2056%2c%2031%2056%2c%2030%2057%20C29%2057%2c%2029%2058%2c%2029%2059%20L29%2068%20C29%2069%2c%2029%2070%2c%2030%2071%20C31%2071%2c%2032%2072%2c%2032%2072%20L70%2072%20L56%2087%20C55%2088%2c%2055%2089%2c%2055%2090%20C55%2090%2c%2055%2091%2c%2056%2092%20L62%2098%20C63%2099%2c%2064%2099%2c%2065%2099%20C65%2099%2c%2066%2099%2c%2067%2098%20L93%2073Z%20%20M113%2036%20C118%2044%2c%20121%2054%2c%20121%2064%20C121%2074%2c%20118%2083%2c%20113%2092%20C108%20100%2c%20101%20107%2c%2093%20112%20C84%20117%2c%2075%20120%2c%2064%20120%20C54%20120%2c%2045%20117%2c%2036%20112%20C28%20107%2c%2021%20100%2c%2016%2092%20C11%2083%2c%208%2074%2c%208%2064%20C8%2054%2c%2011%2044%2c%2016%2036%20C21%2027%2c%2028%2020%2c%2036%2015%20C45%2010%2c%2054%208%2c%2064%208%20C75%208%2c%2084%2010%2c%2093%2015%20C101%2020%2c%20108%2027%2c%20113%2036%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
+}
+#SlideShow5
+{
+   border: 0px solid #DDDDDD;
+   border-radius: 0px;
+   box-sizing: border-box;
+}
+#SlideShow4 .image
+{
+   border-width: 0;
+   border-radius: inherit;
+   display: block;
+   float: left;
+   height: auto;
+   width: 100%;
+}
+#SlideShow4 li
+{
+   border-radius: inherit;
+   position: absolute;
+   width: 100%;
+   left: 0;
+   top: 0;
+}
+#SlideShow4
+{
+   display: inline-block;
+   position: relative;
+   list-style: none;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+}
+#SlideShow4 .carousel-control-next, #SlideShow4 .carousel-control-prev
+{
+   cursor: pointer;
+   position: absolute;
+   text-align: center;
+   top: 0;
+   left: 0;
+   opacity: 0.5;
+   transition: opacity 0.3s ease;
+}
+#SlideShow4 .carousel-control-next-icon, #SlideShow4 .carousel-control-prev-icon
+{
+   display: inline-block;
+   width: 32px;
+   height: 32px;
+   background: transparent no-repeat center center;
+   background-size: 100% 100%;
+}
+#SlideShow4 .carousel-control-next:hover, #SlideShow4 .carousel-control-prev:hover
+{
+   text-decoration: none;
+   outline: 0;
+   opacity: 1;
+}
+#SlideShow4 .carousel-control-prev-icon
+{
+   background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23000000%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M100%2068%20L100%2059%20C100%2058%2c%2099%2057%2c%2099%2057%20C98%2056%2c%2097%2056%2c%2096%2056%20L59%2056%20L73%2040%20C74%2040%2c%2074%2039%2c%2074%2038%20C74%2037%2c%2074%2036%2c%2073%2036%20L67%2029%20C66%2028%2c%2065%2028%2c%2064%2028%20C63%2028%2c%2063%2028%2c%2062%2029%20L36%2055%20L30%2061%20C29%2062%2c%2029%2063%2c%2029%2064%20C29%2065%2c%2029%2065%2c%2030%2066%20L36%2073%20L62%2098%20C63%2099%2c%2063%2099%2c%2064%2099%20C65%2099%2c%2066%2099%2c%2067%2098%20L73%2092%20C74%2091%2c%2074%2091%2c%2074%2090%20C74%2089%2c%2074%2088%2c%2073%2087%20L59%2072%20L96%2072%20C97%2072%2c%2098%2071%2c%2099%2071%20C99%2070%2c%20100%2069%2c%20100%2068%20Z%20M113%2036%20C118%2044%2c%20121%2054%2c%20121%2064%20C121%2074%2c%20118%2083%2c%20113%2092%20C108%20100%2c%20101%20107%2c%2093%20112%20C84%20117%2c%2075%20120%2c%2064%20120%20C54%20120%2c%2045%20117%2c%2036%20112%20C28%20107%2c%2021%20100%2c%2016%2092%20C11%2083%2c%208%2074%2c%208%2064%20C8%2054%2c%2011%2044%2c%2016%2036%20C21%2027%2c%2028%2020%2c%2036%2015%20C45%2010%2c%2054%208%2c%2064%208%20C75%208%2c%2084%2010%2c%2093%2015%20C101%2020%2c%20108%2027%2c%20113%2036%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
+}
+#SlideShow4 .carousel-control-next-icon
+{
+   background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23000000%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M99%2066%20C100%2065%2c%20100%2065%2c%20100%2064%20C100%2063%2c%20100%2062%2c%2099%2061%20L93%2055%20L67%2029%20C66%2028%2c%2065%2028%2c%2065%2028%20C64%2028%2c%2063%2028%2c%2062%2029%20L56%2036%20C55%2036%2c%2055%2037%2c%2055%2038%20C55%2039%2c%2055%2040%2c%2056%2040%20L70%2056%20L32%2056%20C32%2056%2c%2031%2056%2c%2030%2057%20C29%2057%2c%2029%2058%2c%2029%2059%20L29%2068%20C29%2069%2c%2029%2070%2c%2030%2071%20C31%2071%2c%2032%2072%2c%2032%2072%20L70%2072%20L56%2087%20C55%2088%2c%2055%2089%2c%2055%2090%20C55%2090%2c%2055%2091%2c%2056%2092%20L62%2098%20C63%2099%2c%2064%2099%2c%2065%2099%20C65%2099%2c%2066%2099%2c%2067%2098%20L93%2073Z%20%20M113%2036%20C118%2044%2c%20121%2054%2c%20121%2064%20C121%2074%2c%20118%2083%2c%20113%2092%20C108%20100%2c%20101%20107%2c%2093%20112%20C84%20117%2c%2075%20120%2c%2064%20120%20C54%20120%2c%2045%20117%2c%2036%20112%20C28%20107%2c%2021%20100%2c%2016%2092%20C11%2083%2c%208%2074%2c%208%2064%20C8%2054%2c%2011%2044%2c%2016%2036%20C21%2027%2c%2028%2020%2c%2036%2015%20C45%2010%2c%2054%208%2c%2064%208%20C75%208%2c%2084%2010%2c%2093%2015%20C101%2020%2c%20108%2027%2c%20113%2036%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
+}
+#SlideShow4
+{
+   border: 0px solid #DDDDDD;
+   border-radius: 0px;
+   box-sizing: border-box;
+}
 #SlideShow3 .image
 {
    border-width: 0;
-   border-radius: 0px;
+   border-radius: inherit;
    display: block;
    float: left;
    height: auto;
@@ -3702,6 +3654,7 @@ input:focus, textarea:focus, select:focus
 }
 #SlideShow3 li
 {
+   border-radius: inherit;
    position: absolute;
    width: 100%;
    left: 0;
@@ -3715,4 +3668,84 @@ input:focus, textarea:focus, select:focus
    width: 100%;
    padding: 0;
    margin: 0;
+}
+#SlideShow3 .carousel-control-next, #SlideShow3 .carousel-control-prev
+{
+   cursor: pointer;
+   position: absolute;
+   text-align: center;
+   top: 0;
+   left: 0;
+   opacity: 0.5;
+   transition: opacity 0.3s ease;
+}
+#SlideShow3 .carousel-control-next-icon, #SlideShow3 .carousel-control-prev-icon
+{
+   display: inline-block;
+   width: 32px;
+   height: 32px;
+   background: transparent no-repeat center center;
+   background-size: 100% 100%;
+}
+#SlideShow3 .carousel-control-next:hover, #SlideShow3 .carousel-control-prev:hover
+{
+   text-decoration: none;
+   outline: 0;
+   opacity: 1;
+}
+#SlideShow3 .carousel-control-prev-icon
+{
+   background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23000000%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M100%2068%20L100%2059%20C100%2058%2c%2099%2057%2c%2099%2057%20C98%2056%2c%2097%2056%2c%2096%2056%20L59%2056%20L73%2040%20C74%2040%2c%2074%2039%2c%2074%2038%20C74%2037%2c%2074%2036%2c%2073%2036%20L67%2029%20C66%2028%2c%2065%2028%2c%2064%2028%20C63%2028%2c%2063%2028%2c%2062%2029%20L36%2055%20L30%2061%20C29%2062%2c%2029%2063%2c%2029%2064%20C29%2065%2c%2029%2065%2c%2030%2066%20L36%2073%20L62%2098%20C63%2099%2c%2063%2099%2c%2064%2099%20C65%2099%2c%2066%2099%2c%2067%2098%20L73%2092%20C74%2091%2c%2074%2091%2c%2074%2090%20C74%2089%2c%2074%2088%2c%2073%2087%20L59%2072%20L96%2072%20C97%2072%2c%2098%2071%2c%2099%2071%20C99%2070%2c%20100%2069%2c%20100%2068%20Z%20M113%2036%20C118%2044%2c%20121%2054%2c%20121%2064%20C121%2074%2c%20118%2083%2c%20113%2092%20C108%20100%2c%20101%20107%2c%2093%20112%20C84%20117%2c%2075%20120%2c%2064%20120%20C54%20120%2c%2045%20117%2c%2036%20112%20C28%20107%2c%2021%20100%2c%2016%2092%20C11%2083%2c%208%2074%2c%208%2064%20C8%2054%2c%2011%2044%2c%2016%2036%20C21%2027%2c%2028%2020%2c%2036%2015%20C45%2010%2c%2054%208%2c%2064%208%20C75%208%2c%2084%2010%2c%2093%2015%20C101%2020%2c%20108%2027%2c%20113%2036%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
+}
+#SlideShow3 .carousel-control-next-icon
+{
+   background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23000000%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M99%2066%20C100%2065%2c%20100%2065%2c%20100%2064%20C100%2063%2c%20100%2062%2c%2099%2061%20L93%2055%20L67%2029%20C66%2028%2c%2065%2028%2c%2065%2028%20C64%2028%2c%2063%2028%2c%2062%2029%20L56%2036%20C55%2036%2c%2055%2037%2c%2055%2038%20C55%2039%2c%2055%2040%2c%2056%2040%20L70%2056%20L32%2056%20C32%2056%2c%2031%2056%2c%2030%2057%20C29%2057%2c%2029%2058%2c%2029%2059%20L29%2068%20C29%2069%2c%2029%2070%2c%2030%2071%20C31%2071%2c%2032%2072%2c%2032%2072%20L70%2072%20L56%2087%20C55%2088%2c%2055%2089%2c%2055%2090%20C55%2090%2c%2055%2091%2c%2056%2092%20L62%2098%20C63%2099%2c%2064%2099%2c%2065%2099%20C65%2099%2c%2066%2099%2c%2067%2098%20L93%2073Z%20%20M113%2036%20C118%2044%2c%20121%2054%2c%20121%2064%20C121%2074%2c%20118%2083%2c%20113%2092%20C108%20100%2c%20101%20107%2c%2093%20112%20C84%20117%2c%2075%20120%2c%2064%20120%20C54%20120%2c%2045%20117%2c%2036%20112%20C28%20107%2c%2021%20100%2c%2016%2092%20C11%2083%2c%208%2074%2c%208%2064%20C8%2054%2c%2011%2044%2c%2016%2036%20C21%2027%2c%2028%2020%2c%2036%2015%20C45%2010%2c%2054%208%2c%2064%208%20C75%208%2c%2084%2010%2c%2093%2015%20C101%2020%2c%20108%2027%2c%20113%2036%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
+}
+#SlideShow3
+{
+   border: 0px solid #DDDDDD;
+   border-radius: 0px;
+   box-sizing: border-box;
+}
+#wb_Text35 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text35 div
+{
+   text-align: left;
+}
+#wb_Text35
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Text36 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text36 div
+{
+   text-align: left;
+}
+#wb_Text36
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
 }

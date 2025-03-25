@@ -3429,7 +3429,7 @@ body
    padding: 8px 15px 8px 15px;
    background-color: transparent;
    background-image: none;
-   border: 1px dotted #C0C0C0;
+   border: 1px solid transparent;
    border-radius: 4px;
    font-family: "Comic Sans MS";
    font-weight: normal;
